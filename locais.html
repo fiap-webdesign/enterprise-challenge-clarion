@@ -17,7 +17,8 @@
     <link rel="stylesheet" href="./assets/css/menu.css">
     <link rel="stylesheet" href="./assets/css/newsletter.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
-        <link rel="stylesheet" href="./assets/css/filtro.css">
+    <link rel="stylesheet" href="./assets/css/filtro.css">
+    <link rel="stylesheet" href="./assets/css/banner.css">
 
     <title>Locais</title>
 </head>
@@ -52,89 +53,82 @@
                 </div>
             </div>
         </nav>
-    </header>
 
-
-    <header class="banner-locais position-relative">
-        <img src="./assets/img/fundo_header_locais.png" alt="Banner Locais e Eventos" class="img-banner">
-
-        <div class="conteudo-banner container text-start">
-            <p class="tagline mb-2">ENCONTRE ESPAÇOS E EVENTOS PARA PARTICIPAR</p>
-            <h1 class="titulo mb-2">SEU PRÓXIMO DESAFIO ESTÁ LOGO ALI</h1>
-            <p class="subtitulo mb-4">
-                Descubra espaços acessíveis e eventos pensados para você. Da trilha ao pódio, encontre oportunidades que
-                fazem
-                sentido no seu caminho. De academias adaptadas a corridas inclusivas, aqui você encontra espaços e
-                eventos
-                onde
-                sua presença é esperada.
-            </p>
+        <div class="p-5 bg-image header header-locais position-relative">
+            <div class="mask d-flex h-100 w-75 position-relative">
+                <div class="text-white d-flex flex-column justify-content-start align-items-start ps-5 pt-4">
+                    <h5 class="text-uppercase">Encontre espaços e eventos para participar</h5>
+                    <h1 class="mb-3 text-uppercase display-1 w-75">O próximo desafio está logo ali</h1>
+                    <p class="mb-3 fs-4 lh-sm w-50">Descubra espaços acessíveis e eventos feitos para você. De academias
+                        adaptadas a corridas inclusivas, aqui sua presença é esperada.</p>
+                </div>
+            </div>
         </div>
     </header>
 
     <section class="container my-4">
-    <form class="filtro-form bg-white border rounded-3 shadow-sm p-3">
-        <div class="row g-2 align-items-end">
+        <form class="filtro-form bg-white border rounded-3 shadow-sm p-3">
+            <div class="row g-2 align-items-end">
 
-            <div class="col-12 col-md-2">
-                <label class="label-pequena">Esporte</label>
-                <select class="form-select form-select-sm input-filtro">
-                    <option value="" selected>Escolha</option>
-                    <option>Futebol de 5</option>
-                    <option>Voleibol Adaptado</option>
-                    <option>Basquete Adaptado</option>
-                    <option>Goalball</option>
-                    <option>Atletismo com guia</option>
-                    <option>Natação</option>
-                    <option>Judô</option>
-                    <option>Soundball Tennis</option>
-                    <option>Artes marciais</option>
-                </select>
+                <div class="col-12 col-md-2">
+                    <label class="label-pequena">Esporte</label>
+                    <select class="form-select form-select-sm input-filtro">
+                        <option value="" selected>Escolha</option>
+                        <option>Futebol de 5</option>
+                        <option>Voleibol Adaptado</option>
+                        <option>Basquete Adaptado</option>
+                        <option>Goalball</option>
+                        <option>Atletismo com guia</option>
+                        <option>Natação</option>
+                        <option>Judô</option>
+                        <option>Soundball Tennis</option>
+                        <option>Artes marciais</option>
+                    </select>
+                </div>
+
+                <div class="col-12 col-md-2">
+                    <label class="label-pequena">Cidade</label>
+                    <select class="form-select form-select-sm input-filtro">
+                        <option value="" selected>Escolha</option>
+                        <option>São Paulo</option>
+                        <option>Rio de Janeiro</option>
+                        <option>Minas Gerais</option>
+                        <option>Bahia</option>
+                        <option>Rio Grande do Sul</option>
+                        <option>Paraná</option>
+                        <option>Pernambuco</option>
+                        <option>Ceará</option>
+                        <option>Santa Catarina</option>
+                        <option>Goiás</option>
+                        <option>Distrito Federal</option>
+                    </select>
+                </div>
+
+                <div class="col-12 col-md-2">
+                    <label class="label-pequena">Bairro</label>
+                    <select class="form-select form-select-sm input-filtro">
+                        <option value="" selected>Escolha</option>
+                        <option>Centro</option>
+                        <option>Jardim</option>
+                        <option>Moema</option>
+                        <option>Pinheiros</option>
+                        <option>Vila Mariana</option>
+                    </select>
+                </div>
+
+                <div class="col-12 col-md-3">
+                    <label class="label-pequena">Data</label>
+                    <input type="date" class="form-control form-control-sm input-filtro">
+                </div>
+
+                <div class="col-12 col-md-2 d-flex gap-3">
+                    <button type="submit" class="btn-filtrar flex-fill btn-sm">Filtrar</button>
+                    <button type="reset" class="btn-limpar flex-fill btn-sm">Limpar</button>
+                </div>
+
             </div>
-
-            <div class="col-12 col-md-2">
-                <label class="label-pequena">Cidade</label>
-                <select class="form-select form-select-sm input-filtro">
-                    <option value="" selected>Escolha</option>
-                    <option>São Paulo</option>
-                    <option>Rio de Janeiro</option>
-                    <option>Minas Gerais</option>
-                    <option>Bahia</option>
-                    <option>Rio Grande do Sul</option>
-                    <option>Paraná</option>
-                    <option>Pernambuco</option>
-                    <option>Ceará</option>
-                    <option>Santa Catarina</option>
-                    <option>Goiás</option>
-                    <option>Distrito Federal</option>
-                </select>
-            </div>
-
-            <div class="col-12 col-md-2">
-                <label class="label-pequena">Bairro</label>
-                <select class="form-select form-select-sm input-filtro">
-                    <option value="" selected>Escolha</option>
-                    <option>Centro</option>
-                    <option>Jardim</option>
-                    <option>Moema</option>
-                    <option>Pinheiros</option>
-                    <option>Vila Mariana</option>
-                </select>
-            </div>
-
-            <div class="col-12 col-md-3">
-                <label class="label-pequena">Data</label>
-                <input type="date" class="form-control form-control-sm input-filtro">
-            </div>
-
-            <div class="col-12 col-md-2 d-flex gap-3">
-                <button type="submit" class="btn-filtrar flex-fill btn-sm">Filtrar</button>
-                <button type="reset" class="btn-limpar flex-fill btn-sm">Limpar</button>
-            </div>
-
-        </div>
-    </form>
-</section>
+        </form>
+    </section>
 
     <section class="newsletter-section py-5">
         <div class="card text-dark border-0">

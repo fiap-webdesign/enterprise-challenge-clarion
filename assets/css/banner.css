@@ -27,6 +27,30 @@
     background-repeat: no-repeat;
 }
 
+.header-locais {
+    background-image: url('/assets/img/fundo_header_locais.png');
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header-blog {
+    background-image: url('/assets/img/fundo_header_blog.png');
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header-comunidade {
+    background-image: url('/assets/img/fundo_header_comunidade.png');
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .header img {
     z-index: 1;
 }
