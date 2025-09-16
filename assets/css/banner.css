@@ -1,25 +1,36 @@
-.header-blog h5 {
+.header h5 {
     color: var(--texto);
     font-family: var(--fonte-texto);
 }
 
-.header-blog p {
+.header p {
     font-family: var(--fonte-texto);
 }
 
-.header-blog h1 {
+.header h1 {
     font-family: var(--fonte-titulo);
 }
 
-.header-comunidade h5 {
-    font-family: var(--fonte-texto);
+.header-home {
+    background-image: url('/assets/img/fundo_header_home.png');
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.header-comunidade p {
-    font-family: var(--fonte-texto);
+.header-parceiros {
+    background-image: url('/assets/img/fundo_header_parceiros.png');
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.header-comunidade h1 {
-    color: var(--amarelo);
-    font-family: var(--fonte-titulo);
+.header img {
+    z-index: 1;
+}
+
+.header .mask {
+    z-index: 2;
 }
