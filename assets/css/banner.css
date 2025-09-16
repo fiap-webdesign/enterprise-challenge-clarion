@@ -51,6 +51,14 @@
     background-repeat: no-repeat;
 }
 
+.header-banner-home {
+    background-image: url('/assets/img/fundo_banner_home.png');
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .header img {
     z-index: 1;
 }
