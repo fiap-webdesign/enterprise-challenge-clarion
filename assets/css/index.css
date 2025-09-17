@@ -23,3 +23,30 @@
     font-family: var(--fonte-titulo) !important;
     color: var(--vermelho) !important;
 }
+
+.card-evento {
+    background-image: url('/assets/img/card_suajornada.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.tagline-clarion {
+    font-family: var(--fonte-titulo);
+    color: var(--azul);
+    letter-spacing: 5px;
+}
+
+.titulo-secundario {
+    font-family: var(--fonte-titulo);
+}
+
+.topico-icon {
+    width: 48px;
+    height: 48px;
+}
