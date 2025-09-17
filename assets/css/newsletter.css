@@ -1,29 +1,48 @@
-.card,
-.card * {
-    font-family: var(--fonte-texto);
-    color: var(--texto);
+.newsletter-section .card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
 }
 
-.card-title-newsletter {
-    color: var(--texto);
+.newsletter-section .card-img {
+    width: 75% !important;
+    max-width: 900px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    transition: width .25s ease, transform .25s ease;
 }
 
-.input-group input.form-control {
-    color: var(--texto);
-    font-family: var(--fonte-texto);
+.newsletter-section .card-img-overlay {
+    z-index: 2;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform-origin: center center;
+    transition: transform .2s ease;
 }
 
-.input-group-text i {
-    color: var(--texto);
+.newsletter-section .card-img-overlay .card-title {
+    font-size: clamp(1.25rem, 2.2vw, 1.75rem) !important;
+    line-height: 1.08;
+    margin-bottom: 1.25rem;
 }
 
-.input-group .btn-danger {
-    background-color: var(--vermelho);
-    border-color: var(--vermelho);
-    color: var(--branco);
-    font-family: var(--fonte-texto);
+.newsletter-section .card-img-overlay .input-group {
+    width: 50% !important;
+    max-width: 760px;
+    gap: .75rem;
 }
 
-.input-group input::placeholder {
-    color: var(--cinza-escuro);
+.newsletter-section .card-img-overlay .form-control.form-control-lg {
+    font-size: 1rem;
+    padding: .65rem 0.9rem;
+}
+
+.newsletter-section .card-img-overlay .btn.btn-lg {
+    font-size: 1rem;
+    padding: .55rem 1.1rem;
 }
