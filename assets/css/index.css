@@ -11,29 +11,9 @@
     letter-spacing: 25px;
 }
 
-.card {
-    background-image: url('/assets/img/card_inspiracoes.png');
-    height: 500px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
 .card-title {
     font-family: var(--fonte-titulo) !important;
     color: var(--vermelho) !important;
-}
-
-.card-evento {
-    background-image: url('/assets/img/card_suajornada.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 2rem;
 }
 
 .tagline-clarion {
