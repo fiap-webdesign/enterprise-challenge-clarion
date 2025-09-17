@@ -1,0 +1,25 @@
+.card-img-top {
+    width: auto;
+    height: auto;
+    max-width: 109px;
+    max-height: 107px;
+}
+
+.inspacoes-maintitle {
+    font-family: var(--fonte-titulo);
+    color: var(--azul);
+    letter-spacing: 25px;
+}
+
+.card {
+    background-image: url('/assets/img/card_inspiracoes.png');
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-title {
+    font-family: var(--fonte-titulo) !important;
+    color: var(--vermelho) !important;
+}
