@@ -8,7 +8,7 @@
 O projeto foi desenvolvido dentro do desafio **Enterprise Challenge**, cujo tema era **Esportes
  Invisibilizados — Conexões e Comunidade**.
 
-Ao observar a realidade esportiva, indentificamos  que os esportes praticados por pessoas cegas — como  **goalball, futebol de 5, natação adaptada e judô paralímpico** — ainda sofrem com:
+Ao observar a realidade esportiva, identificamos que os esportes praticados por pessoas cegas — como  **goalball, futebol de 5, natação adaptada e judô paralímpico** — ainda sofrem com:
 - **Baixa cobertura midiática**, mesmo com atletas de alto desempenho.  
 - **Pouco apoio institucional e social**, dificultando o acesso à prática esportiva.  
 - **Falta de reconhecimento** até mesmo dentro da comunidade esportiva.  
@@ -19,7 +19,7 @@ O **Clarion** surge como **uma solução inclusiva**, conectando informação, c
 ---
 
 ## 🎯 Proposta  
-O **Clarion** é um **site acessílvel e inclusivo**, desenvolvido para:
+O **Clarion** é um **site acessível e inclusivo**, desenvolvido para:
 - **Valorizar modalidades esportivas invisibilizadas**, divulgando sua importância e impacto.  
 - **Criar conexões reais** entre atletas cegos, professores/instrutores e interessados.  
 - **Promover a inclusão digital**, com uma experiência de navegação acessível para pessoas cegas e com baixa visão.  
