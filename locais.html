@@ -19,12 +19,11 @@
     <link rel="stylesheet" href="./assets/css/footer.css">
     <link rel="stylesheet" href="./assets/css/filtro.css">
     <link rel="stylesheet" href="./assets/css/banner.css">
-
+    <link rel="stylesheet" href="./assets/css/eventos.css">
     <title>Locais</title>
 </head>
 
 <body>
-
     <header class="mb-0 bg-custom">
         <nav class="navbar navbar-expand-lg pt-3 container-fluid">
             <div class="container">
@@ -66,49 +65,97 @@
         </div>
     </header>
 
-    <section class="container my-4">
-        <form class="filtro-form filtro_from_border bg-white border rounded-3 shadow-sm p-3">
-            <div class="row g-2 align-items-end">
+    <main>
+        <section class="container my-4">
+            <form class="filtro-form filtro_from_border bg-white border rounded-3 shadow-sm p-3">
+                <div class="row g-2 align-items-end">
 
-                <div class="col-12 col-md-2">
-                    <label class="label-pequena">Esporte</label>
-                    <select class="form-select form-select-sm input-filtro">
-                        <option value="" selected>Escolha</option>
-                        <option>Futebol de 5</option>
-                        <option>Voleibol Adaptado</option>
-                        <option>Basquete Adaptado</option>
-                    </select>
+                    <div class="col-12 col-md-2">
+                        <label class="label-pequena">Esporte</label>
+                        <select class="form-select form-select-sm input-filtro">
+                            <option value="" selected>Escolha</option>
+                            <option>Futebol de 5</option>
+                            <option>Voleibol Adaptado</option>
+                            <option>Basquete Adaptado</option>
+                        </select>
+                    </div>
+
+                    <div class="col-12 col-md-2">
+                        <label class="label-pequena">Estado</label>
+                        <select class="form-select form-select-sm input-filtro">
+                            <option value="" selected>Escolha</option>
+                            <option>São Paulo</option>
+                        </select>
+                    </div>
+
+                    <div class="col-12 col-md-2">
+                        <label class="label-pequena">Cidade</label>
+                        <select class="form-select form-select-sm input-filtro">
+                            <option value="" selected>Escolha</option>
+                            <option>São Paulo</option>
+                        </select>
+                    </div>
+
+                    <div class="col-12 col-md-2">
+                        <label class="label-pequena">Data</label>
+                        <input type="date" class="form-control form-control-sm input-filtro">
+                    </div>
+
+                    <div class="col-12 col-md-2 d-flex gap-4 px-4">
+                        <button type="submit" class="btn-filtrar flex-fill btn-sm">Filtrar</button>
+                        <button type="reset" class="btn-limpar flex-fill btn-sm">Limpar</button>
+                    </div>
                 </div>
+            </form>
+        </section>
 
-                <div class="col-12 col-md-2">
-                    <label class="label-pequena">Estado</label>
-                    <select class="form-select form-select-sm input-filtro">
-                        <option value="" selected>Escolha</option>
-                        <option>São Paulo</option>
-                    </select>
+        <section class="eventos container">
+            <div class="card-evento">
+                <img src="./assets/img/card-eventos/arena-inclusiva.png" alt="Imagem de pessoas jogando futebol de 5" class="w-100">
+                <div class="card-body">
+                    <div class="informacoes-principais">
+                        <h2 class="mb-1 fs-5">Futebol de 5</h2>
+                        <p class="mb-3 text-highlight"><i class="bi bi-geo-alt-fill me-1"></i>São Paulo, SP</p>
+                    </div>
+                    <div class="informacoes-secundarias">
+                        <p class="mb-2">Data do encontro: 22/09/2025</p>
+                        <p class="mb-2">Endereço: Arena Inclusiva – Rua das Palmeiras, 1200, Bairro Centro, São Paulo – SP</p>
+                        <p class="mb-0">Participe do Futebol de 5! Um evento de inclusão, esporte e superação para pessoas com deficiência visual. Venha apoiar essa experiência única!</p>
+                    </div>
                 </div>
-
-                <div class="col-12 col-md-2">
-                    <label class="label-pequena">Cidade</label>
-                    <select class="form-select form-select-sm input-filtro">
-                        <option value="" selected>Escolha</option>
-                        <option>São Paulo</option>
-                    </select>
-                </div>
-
-                <div class="col-12 col-md-2">
-                    <label class="label-pequena">Data</label>
-                    <input type="date" class="form-control form-control-sm input-filtro">
-                </div>
-
-                <div class="col-12 col-md-2 d-flex gap-4 px-4">
-                    <button type="submit" class="btn-filtrar flex-fill btn-sm">Filtrar</button>
-                    <button type="reset" class="btn-limpar flex-fill btn-sm">Limpar</button>
-                </div>
-
             </div>
-        </form>
-    </section>
+
+            <div class="card-evento">
+                <img src="./assets/img/card-eventos/ginasio-da-integracao.png" alt="Imagem de pessoas jogando futebol de 5" class="w-100">
+                <div class="card-body">
+                    <div class="informacoes-principais">
+                        <h2 class="mb-1 fs-5">Voleibol adaptado</h2>
+                        <p class="mb-3 text-highlight"><i class="bi bi-geo-alt-fill me-1"></i>São Paulo, SP</p>
+                    </div>
+                    <div class="informacoes-secundarias">
+                        <p class="mb-2">Data do encontro: 29/10/2025</p>
+                        <p class="mb-2">Endereço: Ginásio da Integração – Av. Liberdade, 845, Bairro Centro, São Paulo – SP</p>
+                        <p class="mb-0">Venha vibrar com o Voleibol Adaptado! Movimento, inclusão e muita energia em quadra. Um jogo para todos!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-evento">
+                <img src="./assets/img/card-eventos/centro-esportivo.png" alt="Imagem de pessoas jogando futebol de 5" class="w-100">
+                <div class="card-body">
+                    <div class="informacoes-principais">
+                        <h2 class="mb-1 fs-5">Basquete adaptado</h2>
+                        <p class="mb-3 text-highlight"><i class="bi bi-geo-alt-fill me-1"></i>São Paulo, SP</p>
+                    </div>
+                    <div class="informacoes-secundarias">
+                        <p class="mb-2">Data do encontro: 15/09/2025</p>
+                        <p class="mb-2">Endereço: Centro Esportivo Vida Ativa – Rua das Acácias, Bairro Jardim, São Paulo – SP</p>
+                        <p class="mb-0">Basquete Adaptado é emoção pura! Participe e apoie essa celebração de talento, superação e inclusão.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <section class="newsletter-section py-5">
         <div class="card text-dark border-0">
@@ -206,7 +253,6 @@
             © 2025 Copyright: NRSS Group
         </div>
     </footer>
-
 </body>
 
 </html>

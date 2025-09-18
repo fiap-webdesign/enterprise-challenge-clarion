@@ -12,3 +12,8 @@
     --amarelo: #F0BC22;
     --vermelho: #D22828;
 }
+
+/* Classes auxiliares */
+.text-highlight {
+    color: var(--vermelho);
+}
