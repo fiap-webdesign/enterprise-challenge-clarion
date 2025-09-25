@@ -1,48 +1,139 @@
-.newsletter-section .card {
+.newsletter-section .newsletter-card {
     position: relative;
     overflow: hidden;
     border-radius: 1rem;
 }
 
-.newsletter-section .card-img {
-    width: 75% !important;
+.newsletter-section .newsletter-picture {
+    display: block;
+    margin: 0 auto;
+    padding: 1rem;
+    max-width: 900px;
+}
+
+.newsletter-section .newsletter-picture img.card-img {
+    width: 75%;
     max-width: 900px;
     height: auto;
     display: block;
     margin: 0 auto;
     object-fit: cover;
-    transition: width .25s ease, transform .25s ease;
+    transition: width 0.25s ease, transform 0.25s ease;
 }
 
-.newsletter-section .card-img-overlay {
+.newsletter-section .newsletter-overlay {
     z-index: 2;
     padding: 0 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transform-origin: center center;
-    transition: transform .2s ease;
+    text-align: center;
 }
 
-.newsletter-section .card-img-overlay .card-title {
-    font-size: clamp(1.25rem, 2.2vw, 1.75rem) !important;
+.newsletter-section .newsletter-title {
+    font-size: 1.75rem;
     line-height: 1.08;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1rem;
+    max-width: 500px;
 }
 
-.newsletter-section .card-img-overlay .input-group {
-    width: 50% !important;
+.newsletter-section .newsletter-controls {
+    width: 50%;
     max-width: 760px;
-    gap: .75rem;
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    justify-content: center;
 }
 
-.newsletter-section .card-img-overlay .form-control.form-control-lg {
-    font-size: 1rem;
-    padding: .65rem 0.9rem;
+.newsletter-section .newsletter-input-group {
+    display: flex;
+    flex: 1;
+    min-width: 0;
+    align-items: center;
 }
 
-.newsletter-section .card-img-overlay .btn.btn-lg {
+.newsletter-section .input-icon {
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 0.55rem 0.75rem;
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.newsletter-section .newsletter-input-group input.form-control {
     font-size: 1rem;
-    padding: .55rem 1.1rem;
+    padding: 0.65rem 0.9rem;
+    border: 0;
+    border-radius: 0 0.5rem 0.5rem 0;
+    min-width: 0;
+}
+
+.newsletter-section .newsletter-btn {
+    font-size: 1rem;
+    padding: 0.55rem 1.1rem;
+    white-space: nowrap;
+    background-color: var(--vermelho);
+}
+
+@media (max-width: 992px) {
+    .newsletter-section .newsletter-picture img.card-img {
+        width: 90%;
+    }
+
+    .newsletter-section .newsletter-title {
+        font-size: 1.5rem;
+        max-width: 400px;
+    }
+
+    .newsletter-section .newsletter-controls {
+        width: 70%;
+    }
+
+    .newsletter-section .newsletter-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.95rem;
+    }
+
+    .newsletter-section .newsletter-input-group input.form-control {
+        font-size: 0.95rem;
+        padding: 0.6rem 0.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .newsletter-section .newsletter-picture img.card-img {
+        width: 100%;
+    }
+
+    .newsletter-section .newsletter-title {
+        font-size: 1.15rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .newsletter-section .newsletter-controls {
+        width: 100%;
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+        justify-content: center;
+        padding: 0 1rem;
+    }
+
+    .newsletter-section .newsletter-input-group {
+        width: 100%;
+    }
+
+    .newsletter-section .newsletter-input-group input.form-control {
+        width: 100%;
+        text-align: left;
+        padding: 0.6rem 0.9rem;
+    }
+
+    .newsletter-section .newsletter-btn {
+        width: 100%;
+        padding: 0.6rem 1rem;
+        font-size: 0.95rem;
+    }
 }
