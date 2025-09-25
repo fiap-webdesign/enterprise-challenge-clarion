@@ -1,15 +1,16 @@
 
 @import url('style.css');
 
-.filtro_from {
-    max-width: 1300px; 
+.filtro_form {
+    max-width: 780px;     
     margin: 0 auto;   
-}
 
-.filtro_from_border {
-    max-width: 1000px; 
-    margin: 0 auto;
 }
+.filtro_from_border {
+    max-width: 780px; 
+    margin: 0 auto;
+}    
+
 
 .label-pequena {
     font-size: 14px;
@@ -52,10 +53,3 @@
     background-color: #bbb;
 }
 
-@media (max-width: 791px) {
-    .btn-filtrar, .btn-limpar {
-        font-size: 12px;
-        padding: 4px 6px;
-        border-radius: 2px;
-    }
-}

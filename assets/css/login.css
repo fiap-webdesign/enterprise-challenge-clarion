@@ -81,13 +81,9 @@
 
 .social hr {
     flex-grow: 1;
-    /* ocupa todo espaço */
     border: none;
-    /* remove estilo padrão */
     border-top: 1px solid #1f1212;
-    /* linha cinza */
     margin: 0;
-    /* sem margem extra */
     height: 1px;
 }
 
