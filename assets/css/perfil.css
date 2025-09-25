@@ -1,0 +1,162 @@
+.profile-header {
+    background-color: #b9c2c638;
+    border-radius: 16px;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #3B87B2;
+}
+
+.badge {
+    background-color: #F0BC22;
+    color: black;
+}
+
+.custom-list-perfil {
+    padding-left: 0;
+}
+
+.custom-list-perfil li {
+    display: flex;
+    align-items: center;
+}
+
+.custom-list-perfil li i {
+    color: #3B87B2;
+    margin-right: 8px;
+    font-size: 1.2em;
+}
+
+.diploma-icon {
+    color: #3B87B2;
+    font-size: 1.2em;
+}
+
+.text-navy-primary {
+    color: #3B87B2 !important;
+}
+
+.bg-navy-primary {
+    background-color: #3B87B2 !important;
+}
+
+.btn-warning {
+    background-color: #F0BC22;
+    border: none;
+    width: 215px;
+}
+
+.btn-outline-danger {
+    border-color: #D22828;
+    color: #D22828;
+    width: 215px;
+}
+
+.btn-outline-danger:hover {
+    background-color: #D22828;
+    color: #fff;
+}
+
+.btn-outline-primary {
+    border-color: #3B87B2;
+    color: #3B87B2;
+    width: 215px;
+}
+
+.btn-outline-primary:hover {
+    background-color: #3B87B2;
+    color: #fff;
+}
+
+.list-group-item {
+    border: #213541;
+}
+
+.sub-text {
+    color: #003366;
+    opacity: 0.7;
+    display: block;
+    margin-top: 2px;
+}
+
+.badge-custom {
+    background-color: #fff;
+    color: #003366;
+    font-size: 0.75rem;
+    border-radius: 20px;
+    border: 1px solid #b09c9c46;
+}
+
+.icone-conquistas {
+    width: 50px;
+    height: 50px;
+    font-size: 24px
+}
+
+.info-perfil {
+    display: flex;
+    align-items: center;
+}
+
+.info-perfil-card{
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid #F0BC22;
+}
+
+.icon-circle {
+    width: 50px;
+    height: 50px;
+    background-color: #ffc1073c;
+    border-radius: 50%;
+    font-size: 1.5rem;
+}
+
+.icon-circle i {
+    color: #FFC107;
+}
+
+@media (max-width: 992px) {
+    .perfil-infos {
+        flex-direction: column;
+        gap: 0.75rem;
+        align-items: flex-start;
+    }
+
+    .perfil-botoes {
+        display: flex;
+        flex-direction: column;
+        width: 100px;
+        margin-top: 1rem;
+        justify-content: flex-start;
+        gap: 0.75rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .perfil-infos {
+        order: 1;
+    }
+
+    .perfil-botoes {
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+        margin-top: 1rem;
+        order: 2;
+    }
+}
+
+@media (max-width: 990px) {
+    .info-perfil-card {
+        min-height: 130px; 
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+
