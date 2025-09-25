@@ -75,7 +75,7 @@ input::placeholder {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding: 60px 20px;
+    padding: 20px 20px;
     min-height: calc(100vh - 80px);
 }
 
@@ -139,18 +139,19 @@ input::placeholder {
 
 .social {
     display: flex;
-    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .social hr {
     flex-grow: 0;
     border: none;
-    border-top: 1px solid #000000;
-    margin: 0;
+    border-top: 1px solid #000;
     height: 1px;
+    width: 150px;
 }
 
-/* Ajustes responsivos */
 @media (max-width: 768px) {
     .cadastro-hero-img {
         width: 200px;
