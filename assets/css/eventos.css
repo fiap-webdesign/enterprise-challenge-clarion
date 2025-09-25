@@ -18,7 +18,8 @@
             .informacoes-principais {
                 text-align: center;
 
-                p, i {
+                p,
+                i {
                     font-size: 12px;
                 }
             }
@@ -26,6 +27,65 @@
             .informacoes-secundarias {
                 font-size: 14px;
                 color: var(--cinza-escuro);
+            }
+        }
+
+        .botoes {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 16px;
+
+            .btn-favoritar {
+                padding: 6px 5px 4px;
+                display: flex;
+                text-decoration: none;
+                border-radius: 24px;
+                align-items: center;
+                justify-content: center;
+                color: var(--vermelho);
+                border: 2px solid var(--vermelho);
+                width: 37px;
+                height: 37px;
+
+                &:is(:hover, :active, :focus) {
+                    background-color: #d2282840;
+                }
+            }
+
+            .btn-compartilhar {
+                padding: 5px;
+                display: flex;
+                text-decoration: none;
+                border-radius: 24px;
+                align-items: center;
+                justify-content: center;
+                width: 37px;
+                height: 37px;
+                color: var(--azul);
+                border: 2px solid var(--azul);
+
+                &:is(:hover, :active, :focus) {
+                    background-color: #3b87b23b;
+                }
+            }
+        }
+
+        .btn-quero-participar {
+            border-radius: 0.5rem;
+            border: solid 2px var(--vermelho);
+            background-color: var(--vermelho);
+            font-weight: 500;
+            padding-left: 24px;
+            width: -webkit-fill-available;
+            padding-right: 24px;
+            color: #FFF;
+
+            &:is(:hover, :active, :focus) {
+                background-color: #b92626;
+                border-color: #b92626;
+                color: #FFF;
             }
         }
     }
@@ -38,14 +98,14 @@
     }
 }
 
-@media screen and (max-width: 992px) and (min-width: 546px) {
+@media screen and (max-width: 992px) and (min-width: 768px) {
     .eventos {
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 1.5rem;
     }
 }
 
-@media screen and (max-width: 545px) {
+@media screen and (max-width: 768px) {
     .eventos {
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 1rem;
