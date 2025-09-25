@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/menu.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/login.css">
     <title>Login</title>
 </head>
 
@@ -49,6 +50,53 @@
             </div>
         </nav>
     </header>
+
+    <main class="login-section d-flex justify-content-center align-items-center">
+        <div class="login-container d-flex flex-column align-items-center text-center">
+            <img src="./assets/img/icone_login.png" alt="Ilustração login" class="login-hero-img mb-3">
+            <h2 class="login-title mb-5">Seja bem-vindo de volta!</h2>
+
+            <form class="login-form p-4 rounded w-100 py-5 px-5">
+                <div class="mb-4 input-wrapper">
+                    <label for="email" class="form-label fw-semibold text-start d-block">Email</label>
+                    <input type="email" id="email" class="form-control" placeholder="Digite seu email" required>
+                    <i class="fa-regular fa-envelope input-icon"></i>
+                </div>
+
+                <div class="mb-4 input-wrapper">
+                    <label for="senha" class="form-label fw-semibold text-start d-block">Senha</label>
+                    <input type="password" id="senha" class="form-control" placeholder="Digite sua senha" required>
+                    <i class="fa-solid fa-lock input-icon"></i>
+                </div>
+
+                <button type="submit" class="btn btn-danger w-75 py-1 mt-3 mb-4">Entrar</button>
+                <p class="login-text text-center">Não possui conta? <a href="cadastro.html">Cadastre-se</a></p>
+            </form>
+
+            <div class="social d-flex align-items-center my-3 mt-5">
+                <hr class="flex-grow-1 m-0">
+                <span class="mx-5 text-dark">OU</span>
+                <hr class="flex-grow-1 m-0">
+            </div>
+
+            <div class="text-white-custom text-center mb-3">
+                Entre com uma rede social
+            </div>
+
+            <div class="social-login mt-0 d-flex justify-content-center gap-5">
+                <a href="https://www.apple.com" target="_blank" aria-label="Entrar com Apple" class="text-dark">
+                    <i class="bi bi-apple fs-4"></i>
+                </a>
+                <a href="https://www.facebook.com" target="_blank" aria-label="Entrar com Facebook"
+                    class="text-primary">
+                    <i class="bi bi-facebook fs-4"></i>
+                </a>
+                <a href="https://www.google.com" target="_blank" aria-label="Entrar com Google" class="text-danger">
+                    <i class="bi bi-google fs-4"></i>
+                </a>
+            </div>
+        </div>
+    </main>
 
     <footer class="text-center text-lg-start text-muted">
         <section>
