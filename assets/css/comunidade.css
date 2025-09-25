@@ -1,0 +1,198 @@
+.criar-publicacao {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 16px;
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+    padding: 16px;
+
+    img {
+        max-width: 60px;
+        height: 60px;
+        width: 100%;
+        border-radius: 100%;
+    }
+
+    form {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        gap: 16px;
+        width: 100%;
+
+        .publicacao-input-group {
+            display: flex;
+            width: 100%;
+            align-items: end;
+            gap: 16px;
+            border-radius: 2rem;
+            border: 1px solid lightgray;
+            padding: 6px 8px 6px 12px;
+
+            textarea {
+                width: 100%;
+                border: unset !important;
+                outline: unset !important;
+                padding: 0 6px;
+                border-radius: 24px;
+            }
+
+            textarea::placeholder {
+                padding: 10px 6px;
+            }
+        }
+
+        .btn-anexar {
+            border-radius: 100%;
+            width: 48px;
+            min-width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: unset;
+            background-color: #FCF2D3;
+            color: #F0BC22;
+
+            span {
+                font-size: 1.5rem;
+            }
+        }
+
+        .btn-publicar {
+            border-radius: 100%;
+            min-width: 59px;
+            width: 59px;
+            height: 59px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: unset;
+            background-color: #3b87b2;
+            color: white;
+
+            span {
+                font-size: 2.4rem;
+            }
+        }
+    }
+}
+
+.publicacoes {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    .publicacao {
+        max-width: 525px;
+        width: 100%;
+        padding: 16px;
+        display: flex;
+        gap: 16px;
+        box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+        border-radius: 24px;
+        flex-direction: column;
+
+        .usuario {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            img {
+                max-width: 45px;
+                height: 45px;
+                width: 100%;
+                border-radius: 100%;
+            }
+
+            .nome {
+                font-weight: 500;
+            }
+
+            .localizacao {
+                color: var(--vermelho);
+                font-size: 10px;
+                font-weight: 500;
+                display: flex;
+                align-items: center;
+
+                i {
+                    font-size: 8px;
+                }
+            }
+        }
+
+        .midia {
+            border-radius: 24px;
+        }
+
+        .data {
+            font-size: 12px;
+            color: var(--cinza-escuro);
+            margin-bottom: 0;
+        }
+    }
+}
+
+hr {
+    color: inherit;
+    border: 0;
+    border-top: var(--azul) 8px solid;
+    opacity: 1;
+    max-width: 66px;
+    margin: auto;
+}
+
+@media (min-width: 510px) {
+    .criar-publicacao {
+
+        .btn-anexar.mobile,
+        .btn-publicar.mobile {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 510px) {
+    .criar-publicacao {
+        gap: 8px;
+
+        img {
+            max-width: 48px;
+            height: 48px;
+        }
+
+        form {
+            flex-direction: column;
+
+            .btn-anexar.desktop,
+            .btn-publicar.desktop {
+                display: none;
+            }
+
+            .publicacao-input-group {
+                padding: 0;
+            }
+
+            .botoes-mobile {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+
+                .btn-anexar,
+                .btn-publicar {
+                    width: 45px;
+                    height: 45px;
+                    min-width: 45px;
+
+                    span {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
