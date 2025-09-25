@@ -38,6 +38,7 @@
 
 @media screen and (min-width: 545px) {
     .call-to-action {
+
         .cta-card div:first-of-type,
         .cta-card div:first-of-type img {
             border-bottom-left-radius: 24px;
@@ -51,6 +52,14 @@
             border-bottom-right-radius: 24px;
             border-top-right-radius: 24px;
             height: 100%;
+            width: 50%;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .call-to-action {
+        .cta-card {
             width: 50%;
         }
     }
