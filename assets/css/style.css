@@ -24,6 +24,10 @@
     color: var(--vermelho);
 }
 
+.text-secondary {
+    color: var(--cinza-escuro);
+}
+
 .btn {
     border-radius: var(--btn-border-radius);
     font-weight: 500;
