@@ -49,31 +49,33 @@
         </nav>
     </header>
 
-    <main class="cadastro-section d-flex justify-content-center align-items-start py-5">
+    <main class="cadastro-section d-flex justify-content-center align-items-center py-4 flex-column container">
         <div class="cadastro-container d-flex flex-column align-items-center text-center">
-            <img src="./assets/img/icone_cadastro.png" alt="Ilustração de um homem correndo e uma mulher levantando um halter." class="cadastro-hero-img mb-3 w-50">
+            <img src="./assets/img/icone_cadastro.png"
+                alt="Ilustração de um homem correndo e uma mulher levantando um halter."
+                class="cadastro-hero-img mb-3 w-50">
 
-            <h2 class="cadastro-title mb-4">Seja bem vindo!</h2>
-            <form class="cadastro-form p-4 w-100">
+            <h2 class="cadastro-title mb-4 mt-1">Seja bem vindo!</h2>
+            <form class="cadastro-form w-100">
 
-                <div class="mb-5 position-relative border rounded p-3">
-                    <h5 class="form-section-title position-absolute bg-white px-2">Informações Pessoais</h5>
+                <div class="mb-5 position-relative grupo-cadastro p-3">
+                    <h5 class="form-section-title position-absolute px-2">Informações Pessoais</h5>
 
-                    <div class="row mb-3 mt-4">
+                    <div class="row mb-3 mt-2">
                         <div class="col-12 col-md-6 ">
-                            <label class="form-label d-block text-start w-100">Primeiro Nome <span
+                            <label class="fw-semibold d-block text-start w-100">Primeiro nome <span
                                     class="text-danger">*</span></label>
                             <input type="text" class="form-control" required>
                         </div>
                         <div class="col-12 col-md-6">
-                            <label class="form-label d-block text-start w-100">Segundo Nome <span
+                            <label class="fw-semibold d-block text-start w-100">Sobrenome <span
                                     class="text-danger">*</span></label>
                             <input type="text" class="form-control" required>
                         </div>
                     </div>
 
                     <div class="mb-3">
-                        <label for="email" class="form-label text-start w-100">Email <span
+                        <label for="email" class="fw-semibold text-start w-100">E-mail <span
                                 class="text-danger">*</span></label>
                         <div class="input-wrapper position-relative">
                             <input type="email" class="form-control" id="email" placeholder="seuemail@gmail.com"
@@ -86,23 +88,23 @@
 
                     <div class="mb-3">
                         <div class="mb-3">
-                            <label for="data-nascimento" class="form-label text-start w-100">Data de Nascimento <span
+                            <label for="data-nascimento" class="fw-semibold text-start w-100">Data de Nascimento <span
                                     class="text-danger">*</span></label>
                             <div class="input-group">
                                 <input type="date" class="form-control border-end-0" id="data-nascimento" required>
-                                <span class="input-group-text bg-white border-start-0">
+                                <span class="input-group-text border-start-0">
                                     <i class="fa-regular fa-calendar"></i>
                                 </span>
                             </div>
                         </div>
 
                         <div class="mb-3">
-                            <label for="celular" class="form-label text-start w-100">Celular <span
+                            <label for="celular" class="fw-semibold text-start w-100">Celular <span
                                     class="text-danger">*</span></label>
                             <div class="input-group">
                                 <input type="tel" class="form-control border-end-0" id="celular"
                                     placeholder="(DDD) 99999-9999" required>
-                                <span class="input-group-text bg-white border-start-0">
+                                <span class="input-group-text border-start-0">
                                     <i class="fa-solid fa-mobile-screen"></i>
                                 </span>
                             </div>
@@ -111,7 +113,7 @@
 
                     <div class="row mb-3">
                         <div class="col-12 col-md-6 mb-3 mb-md-0">
-                            <label class="form-label d-block text-start w-100">Gênero</label>
+                            <label class="fw-semibold d-block text-start w-100">Gênero</label>
                             <select class="form-select">
                                 <option selected disabled>Selecione</option>
                                 <option>Masculino</option>
@@ -120,14 +122,14 @@
                             </select>
                         </div>
                         <div class="col-12 col-md-6">
-                            <label class="form-label d-block text-start w-100">Redes Sociais</label>
+                            <label class="fw-semibold d-block text-start w-100">Redes Sociais</label>
                             <input type="text" class="form-control">
                         </div>
                     </div>
 
                     <div class="mb-3">
-                        <label class="form-label d-block text-start w-100">
-                            Grau de Cegueira <span class="text-danger">*</span>
+                        <label class="fw-semibold d-block text-start w-100">
+                            Grau de cegueira <span class="text-danger">*</span>
                         </label>
                         <select class="form-select" required>
                             <option selected disabled>Selecione</option>
@@ -138,7 +140,7 @@
 
                         <a class="d-block mt-1 text-start" data-bs-toggle="collapse" href="#grausCegueira" role="button"
                             aria-expanded="false" aria-controls="grausCegueira">
-                            Saiba quais são os Graus de cegueira
+                            Saiba quais são os graus de cegueira
                         </a>
 
                         <div class="collapse mt-2 text-start" id="grausCegueira">
@@ -160,25 +162,25 @@
                     </div>
 
                     <div class="mb-3">
-                        <label for="senha" class="form-label text-start w-100">Senha <span
+                        <label for="senha" class="fw-semibold text-start w-100">Senha <span
                                 class="text-danger">*</span></label>
                         <div class="input-group">
                             <input type="password" class="form-control border-end-0" id="senha"
                                 placeholder="Digite sua senha" required>
-                            <span class="input-group-text bg-white border-start-0">
+                            <span class="input-group-text border-start-0">
                                 <i class="fa-regular fa-eye"></i>
                             </span>
                         </div>
                         <div class="form-text text-start">A senha deve conter ao menos 8 caracteres</div>
                     </div>
 
-                    <div class="mb-3">
-                        <label for="Confirmação da senha" class="form-label text-start w-100">Confirmação da senha <span
-                                class="text-danger">*</span></label>
+                    <div>
+                        <label for="Confirmação da senha" class="fw-semibold text-start w-100">Confirmação da senha
+                            <span class="text-danger">*</span></label>
                         <div class="input-group">
                             <input type="password" class="form-control border-end-0" id="senha"
                                 placeholder="Digite novamente sua senha" required>
-                            <span class="input-group-text bg-white border-start-0">
+                            <span class="input-group-text border-start-0">
                                 <i class="fa-regular fa-eye"></i>
                             </span>
                         </div>
@@ -186,58 +188,57 @@
                     </div>
                 </div>
 
-                <div class="mb-5 position-relative border rounded p-3">
+                <div class="mb-5 position-relative grupo-cadastro p-3">
                     <h5 class="form-section-title position-absolute px-2">Localização</h5>
 
-                    <div class="row mt-3">
+                    <div class="row mt-2">
                         <div class="col-12 col-md-6 mb-3 mb-md-0">
-                            <label class="form-label d-block text-start w-100">Endereço <span
+                            <label class="fw-semibold d-block text-start w-100">Endereço <span
                                     class="text-danger">*</span></label>
                             <input type="text" class="form-control" required>
                         </div>
                         <div class="col-12 col-md-6">
-                            <label class="form-label d-block text-start w-100">Bairro <span
+                            <label class="fw-semibold d-block text-start w-100">Bairro <span
                                     class="text-danger">*</span></label>
                             <input type="text" class="form-control" required>
                         </div>
                     </div>
 
-                    <div class="row mb-3 mt-3">
+                    <div class="row mt-3">
                         <div class="col-12 col-md-6 mb-3 mb-md-0">
-                            <label class="form-label d-block text-start w-100">Cidade <span
+                            <label class="fw-semibold d-block text-start w-100">Cidade <span
                                     class="text-danger">*</span></label>
                             <input type="text" class="form-control" required>
                         </div>
                         <div class="col-12 col-md-6">
-                            <label class="form-label d-block text-start w-100">Código Postal </label>
+                            <label class="fw-semibold d-block text-start w-100">Código postal </label>
                             <input type="text" class="form-control" required>
                         </div>
                     </div>
                 </div>
 
-                <div class="mb-5 position-relative border rounded p-3">
-                    <h5 class="form-section-title position-absolute bg-white px-2">Perfil</h5>
+                <div class="mb-4 position-relative grupo-cadastro p-3">
+                    <h5 class="form-section-title position-absolute px-2">Perfil</h5>
 
-                    <div class="mb-3 mt-3">
-                        <label class="form-label d-block text-start w-100 mb-3">Tipo de perfil <span
+                    <div class="mb-3 mt-2">
+                        <label class="fw-semibold d-block text-start w-100">Tipo de perfil <span
                                 class="text-danger">*</span></label>
                         <div class="justify-start-center gap-4 flex-wrap">
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="perfil" id="atleta" value="Atleta"
-                                    required>
+                                <input class="form-check-input" type="checkbox" name="perfil[]" id="atleta"
+                                    value="Atleta">
                                 <label class="form-check-label" for="atleta">Atleta</label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="perfil" id="instrutor"
-                                    value="Instrutor" required>
+                                <input class="form-check-input" type="checkbox" name="perfil[]" id="instrutor"
+                                    value="Instrutor">
                                 <label class="form-check-label" for="instrutor">Instrutor</label>
                             </div>
                         </div>
                     </div>
                     <div class="row mb-3 mt-4">
                         <div class="col-12 col-md-6 mb-md-0 mb-3">
-                            <label class="form-label d-block text-start w-100">Nível de experiência <span
-                                    class="text-danger">*</span></label>
+                            <label class="fw-semibold d-block text-start w-100">Nível de experiência <span class="text-danger">*</span></label>
                             <select class="form-select" required>
                                 <option selected disabled>Selecione</option>
                                 <option>Iniciante</option>
@@ -246,9 +247,8 @@
                             </select>
                         </div>
                         <div class="col-12 col-md-6">
-                            <label class="form-label d-block text-start w-100">Objetivo principal <span
-                                    class="text-danger">*</span></label>
-                            <select class="form-select" required>
+                            <label class="fw-semibold d-block text-start w-100">Objetivo principal</label>
+                            <select class="form-select">
                                 <option selected disabled>Selecione</option>
                                 <option>Condicionamento físico</option>
                                 <option>Reabilitação</option>
@@ -257,43 +257,43 @@
                         </div>
                     </div>
 
-                    <div class="mb-4 mt-4">
-                        <label class="form-label d-block text-start w-100">Esportes de preferência </label>
+                    <div class="mt-4">
+                        <label class="fw-semibold d-block text-start w-100">Esportes de preferência </label>
                         <input type="text" class="form-control" required>
                     </div>
                 </div>
 
-                <button type="submit" class="btn btn-primary w-75 py-2 mb-3">Criar conta</button>
+                <button type="submit" class="btn btn-primary w-100 py-2 mt-1 mb-3">Criar conta</button>
 
-                <p class="cadastro-text text-center">
-                    Já tem conta? <a href="login.html" class="cadastro-text">Faça login!</a>
+                <p class="cadastro-text mb-0 w-100 d-flex justify-content-center gap-3 text-secondary">
+                    Já tem uma conta? <a href="login.html" class="cadastro-text">Faça login!</a>
                 </p>
         </div>
-    </main>
 
-    <div class="social-wrapper">
-        <div class="social d-flex align-items-center justify-content-center gap-5">
-            <hr>
-            <span class="text-dark">OU</span>
-            <hr class="flex-grow-1">
+        <div class="social-wrapper py-2">
+            <div class="social d-flex align-items-center justify-content-center gap-5">
+                <hr>
+                <span class="text-secondary">OU</span>
+                <hr class="flex-grow-1">
+            </div>
         </div>
-    </div>
 
-    <div class="text-dark text-center mb-3">
-        Entre com uma rede social
-    </div>
+        <div class="text-dark text-center mb-3">
+            Entre com uma rede social
+        </div>
 
-    <div class="social-login mt-0 d-flex justify-content-center gap-5 mb-5">
-        <a href="https://www.apple.com" target="_blank" aria-label="Entrar com Apple" class="text-dark">
-            <i class="bi bi-apple fs-4"></i>
-        </a>
-        <a href="https://www.facebook.com" target="_blank" aria-label="Entrar com Facebook" class="text-primary">
-            <i class="bi bi-facebook fs-4"></i>
-        </a>
-        <a href="https://www.google.com" target="_blank" aria-label="Entrar com Google" class="text-danger">
-            <i class="bi bi-google fs-4"></i>
-        </a>
-    </div>
+        <div class="social-login mt-0 d-flex justify-content-center gap-5">
+            <a href="https://www.apple.com" target="_blank" aria-label="Entrar com Apple" class="text-dark">
+                <i class="bi bi-apple fs-4"></i>
+            </a>
+            <a href="https://www.facebook.com" target="_blank" aria-label="Entrar com Facebook" class="text-primary">
+                <i class="bi bi-facebook fs-4"></i>
+            </a>
+            <a href="https://www.google.com" target="_blank" aria-label="Entrar com Google" class="text-danger">
+                <i class="bi bi-google fs-4"></i>
+            </a>
+        </div>
+    </main>
 
     <footer class="text-center text-lg-start text-muted border-top">
         <section>

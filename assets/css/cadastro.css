@@ -1,10 +1,20 @@
 .cadastro-section {
-    background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding: 60px 20px;
-    min-height: calc(100vh - 80px);
+
+    label {
+        font-size: 14px;
+    }
+
+    .grupo-cadastro {
+        box-shadow: var(--box-shadow);
+        border-radius: var(--border-radius);
+    }
+
+    .btn {
+        max-width: 400px;
+    }
 }
 
 .cadastro-container {
@@ -14,64 +24,65 @@
 }
 
 .cadastro-hero-img {
-    width: 280px;
+    max-width: 280px;
+    width: 100%;
     height: auto;
     margin-bottom: 20px;
 }
 
 a[data-bs-toggle="collapse"] {
     font-size: 0.9rem;
-    color: #3B87B2;
+    color: var(--azul);
     text-decoration: none;
     cursor: pointer;
 }
 
 .card-body {
     padding: 0.75rem 1rem;
-    background-color: #f8f9fa;
     border-radius: 0.25rem;
 }
-
 
 .input-wrapper .input-icon-end {
     position: absolute;
     right: 0.75rem;
     top: 50%;
     transform: translateY(-50%);
-    color: hsla(208, 7%, 46%, 0.995);
+    color: var(--cinza-escuro);
 
     #grausCegueiraInfo .card {
-        border: 1px solid #ddd;
-        background-color: #f8f9fa;
-        /* cinza claro */
+        border: 1px solid var(--cinza-escuro);
+        background-color: var(--cinza-claro);
         font-size: 14px;
         line-height: 1.5;
     }
-
-    #grausCegueiraInfo strong {
-        color: #000;
-    }
-
 }
 
 .cadastro-title {
     font-family: 'Anton', sans-serif;
-    font-size: 28px;
-    margin-bottom: 20px;
+    font-size: 24px;
 }
 
 input::placeholder {
-    color: #adb5bd;
+    color: var(--cinza-escuro);
     opacity: 1;
 }
 
 .input-group-text i {
-    color: hsla(208, 7%, 46%, 0.995);
-    ;
+    color: var(--cinza-escuro);
+}
+
+input[type="date i"],
+input[type="date"]::-webkit-calendar-picker-indicator {
+
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    appearance: none;
+    position: relative;
+    display: none;
+    -webkit-appearance: none;
 }
 
 .cadastro-section {
-    background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -85,13 +96,10 @@ input::placeholder {
 }
 
 .form-section-title {
-    font-size: 20px;
-    color: #000;
-    background-color: #fff;
+    font-size: 18px;
     display: inline-block;
     top: -12px;
     left: 15px;
-    ;
 }
 
 .input-icon {
@@ -99,7 +107,7 @@ input::placeholder {
     right: 15px;
     top: 50%;
     transform: translateY(-50%);
-    color: #6c757d;
+    color: var(--cinza-escuro);
     pointer-events: none;
 }
 
@@ -109,27 +117,19 @@ input::placeholder {
     padding-bottom: 10px;
 }
 
-.form-section-title {
-    font-size: 18px;
-    text-align: center;
-    padding-bottom: 4px;
-    margin-bottom: 20px;
-}
-
 .cadastro-form .form-check {
     display: flex;
     align-items: center;
     gap: 6px;
 }
 
-.cadastro-form .btn {
-    font-size: 18px;
-    padding: 10px 0;
-}
-
 .cadastro-text a {
     text-decoration: none;
-    color: #3B87B2;
+    color: var(--azul);
+
+    :hover {
+        text-decoration: underline;
+    }
 }
 
 .social-wrapper {
@@ -147,7 +147,7 @@ input::placeholder {
 .social hr {
     flex-grow: 0;
     border: none;
-    border-top: 1px solid #000;
+    border-top: 1px solid var(--cinza-escuro);
     height: 1px;
     width: 150px;
 }
