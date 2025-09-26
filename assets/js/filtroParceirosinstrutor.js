@@ -8,15 +8,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const atletas = Array.from(document.querySelectorAll(".card-atleta"));
     const atletasContainer = document.querySelector(".atletas");
+    const retornosErro = document.querySelector("#alerta");
 
     let noResultsEl = atletasContainer.querySelector(".no-results-message");
     if (!noResultsEl) {
         noResultsEl = document.createElement("p");
-        noResultsEl.className = "no-results-message";
-        noResultsEl.textContent = "Nenhum atleta encontrado.";
+        noResultsEl.className = "no-results-message alert alert-warning";
+        noResultsEl.textContent = "Ops... Não encontramos resultados para essa busca. Experimente remover ou alterar alguns filtros e tente novamente!";
         noResultsEl.style.display = "none";
         noResultsEl.style.marginTop = "1rem";
-        atletasContainer.appendChild(noResultsEl);
+        retornosErro.appendChild(noResultsEl);
     }
 
     function normalize(text) {
@@ -26,16 +27,10 @@ document.addEventListener("DOMContentLoaded", () => {
     function parseCard(card) {
         const nome = card.querySelector("h2")?.textContent?.trim() || "";
         const locationText = card.querySelector(".text-highlight")?.textContent?.trim() || "";
-        const paras = Array.from(card.querySelectorAll(".informacoes-secundarias p"));
+        const esportes = card.querySelector(".informacoes-secundarias p:last-child")?.textContent || "";
+        const disponibilidade = card.dataset.disponibilidade || "";
 
-        let esportes = "";
-
-        paras.forEach(p => {
-            const text = p.textContent.toLowerCase();
-            if (text.includes("esporte")) esportes = p.textContent;
-        });
-
-        return { nome, locationText, esportes };
+        return { nome, locationText, esportes, disponibilidade };
     }
 
     function filterAtletas() {
@@ -47,18 +42,18 @@ document.addEventListener("DOMContentLoaded", () => {
         let anyVisible = false;
 
         atletas.forEach(card => {
-            const { nome, locationText, esportes } = parseCard(card);
+            const { locationText, esportes, disponibilidade } = parseCard(card);
 
             const nLocation = normalize(locationText);
             const nEsportes = normalize(esportes);
-            const nNome = normalize(nome);
+            const nDisponibilidade = normalize(disponibilidade);
 
             let visible = true;
 
             if (esporteVal && !nEsportes.includes(esporteVal)) visible = false;
             if (estadoVal && !nLocation.includes(estadoVal)) visible = false;
             if (cidadeVal && !nLocation.includes(cidadeVal)) visible = false;
-            if (parceiroVal && !nNome.includes(parceiroVal)) visible = false;
+            if (parceiroVal && !nDisponibilidade.includes(parceiroVal)) visible = false;
 
             card.style.display = visible ? "" : "none";
             if (visible) anyVisible = true;

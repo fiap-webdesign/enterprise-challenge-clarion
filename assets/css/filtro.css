@@ -1,55 +1,21 @@
-
 @import url('style.css');
 
 .filtro_form {
-    max-width: 780px;     
-    margin: 0 auto;   
-
-}
-.filtro_from_border {
-    max-width: 780px; 
     margin: 0 auto;
-}    
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
 
+    #alerta {
+        width: max-content;
+        margin: auto;
+    }
+
+.filtro_from_border {
+    margin: 0 auto;
+}
 
 .label-pequena {
     font-size: 14px;
     color: var(--texto)
 }
-
-.input-filtro {
-    font-size: 14px;
-    border: 1px solid var(--azul);
-    border-radius: 4px;
-    padding: 4px 8px;
-    height: calc(1.5em + 0.5rem + 2px);
-}
-
-.btn-filtrar {
-    font-size: 14px;
-    padding: 6px 30px;
-    border-radius: 4px;
-    background-color: var(--texto);
-    color: var(--branco);
-    border: none;
-    cursor: pointer;
-}
-
-.btn-filtrar:hover {
-    background-color: var(--cinza-escuro);
-}
-
-.btn-limpar {
-    font-size: 14px;
-    padding: 6px 30px;
-    border-radius: 4px;
-    background-color: var(--cinza-claro);
-    color: var(--texto);
-    border: none;
-    cursor: pointer;
-}
-
-.btn-limpar:hover {
-    background-color: #bbb;
-}
-

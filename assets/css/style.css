@@ -6,14 +6,60 @@
     --fonte-texto: 'Roboto', sans-serif;
     --branco: #ffffff;
     --azul: #3B87B2;
+    --azul-hover: #2b6181;
+    --azul-opacity: #3b86b22a;
     --texto: #333333;
     --cinza-escuro: #9CA0B0;
     --cinza-claro: #F2F2F2;
     --amarelo: #F0BC22;
     --vermelho: #D22828;
+    --vermelho-hover: #b92323;
+    --box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+    --border-radius: 1rem;
+    --btn-border-radius: .5rem;
 }
 
 /* Classes auxiliares */
 .text-highlight {
     color: var(--vermelho);
+}
+
+.btn {
+    border-radius: var(--btn-border-radius);
+    font-weight: 500;
+    min-width: 100px;
+}
+
+.btn-primary {
+    background-color: var(--vermelho);
+    border-color: var(--vermelho);
+    color: #FFFFFF;
+
+    &:is(:hover, :focus, :active) {
+        background-color: var(--vermelho-hover);
+        border-color: var(--vermelho-hover);
+    }
+}
+
+.btn-secondary {
+    background-color: var(--azul);
+    border-color: var(--azul);
+    color: #FFFFFF;
+
+    &:is(:hover, :focus, :active) {
+        background-color: var(--azul-hover);
+        border-color: var(--azul-hover);
+    }
+}
+
+.btn-secondary-opacity {
+    background-color: #FFFFFF;
+    border-color: var(--azul);
+    color: var(--azul);
+
+    &:is(:hover, :focus, :active) {
+        background-color: var(--azul-opacity);
+        color: var(--azul);
+        border-color: var(--azul);
+    }
 }

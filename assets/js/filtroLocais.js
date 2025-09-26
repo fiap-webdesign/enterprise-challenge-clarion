@@ -9,16 +9,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const eventos = Array.from(document.querySelectorAll(".card-evento"));
     const eventosContainer = document.querySelector(".eventos");
+    const retornosErro = document.querySelector("#alerta");
 
-let noResultsEl = eventosContainer.querySelector(".no-results-message");
-if (!noResultsEl) {
-    noResultsEl = document.createElement("p");
-    noResultsEl.className = "no-results-message";
-    noResultsEl.textContent = "Nenhum evento encontrado.";
-    noResultsEl.style.display = "none";
-    noResultsEl.style.marginTop = "1rem";
-    eventosContainer.appendChild(noResultsEl);
-}
+    let noResultsEl = eventosContainer.querySelector(".no-results-message");
+    if (!noResultsEl) {
+        noResultsEl = document.createElement("p");
+        noResultsEl.className = "no-results-message alert alert-warning";
+        noResultsEl.textContent = "Ops... Não encontramos resultados para essa busca. Experimente remover ou alterar alguns filtros e tente novamente!";
+        noResultsEl.style.display = "none";
+        noResultsEl.style.marginTop = "1rem";
+        retornosErro.appendChild(noResultsEl);
+    }
 
 function normalize(text) {
     return (text || "")

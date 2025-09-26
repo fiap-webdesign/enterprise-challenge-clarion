@@ -72,21 +72,8 @@
             }
         }
 
-        .btn-quero-participar {
-            border-radius: 0.5rem;
-            border: solid 2px var(--vermelho);
-            background-color: var(--vermelho);
-            font-weight: 500;
-            padding-left: 24px;
+        .btn-primary {
             width: -webkit-fill-available;
-            padding-right: 24px;
-            color: #FFF;
-
-            &:is(:hover, :active, :focus) {
-                background-color: #b92626;
-                border-color: #b92626;
-                color: #FFF;
-            }
         }
     }
 }

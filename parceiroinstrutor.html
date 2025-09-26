@@ -71,13 +71,12 @@
 
     <main>
         <section class="container my-4">
-            <form class="filtro-form filtro_form bg-white border rounded-3 shadow-sm p-3">
+            <form class="filtro-form filtro_form p-3">
                 <div class="row g-2 align-items-end">
-
                     <div class="col-6 col-md-2">
                         <label class="label-pequena">Esporte</label>
-                        <select class="form-select form-select-sm input-filtro">
-                            <option value="" selected>Escolha</option>
+                        <select class="form-select input-filtro">
+                            <option value="" selected>Todos</option>
                             <option>Futebol</option>
                             <option>Vôlei</option>
                             <option>Basquete</option>
@@ -89,16 +88,16 @@
 
                     <div class="col-6 col-md-2">
                         <label class="label-pequena">Estado</label>
-                        <select class="form-select form-select-sm input-filtro">
-                            <option value="" selected>Escolha</option>
+                        <select class="form-select input-filtro">
+                            <option value="" selected>Todos</option>
                             <option>São Paulo</option>
                         </select>
                     </div>
 
                     <div class="col-6 col-md-2">
                         <label class="label-pequena">Cidade</label>
-                        <select class="form-select form-select-sm input-filtro">
-                            <option value="" selected>Escolha</option>
+                        <select class="form-select input-filtro">
+                            <option value="" selected>Todas</option>
                             <option>Mauá</option>
                             <option>São Bernardo do Campo</option>
                             <option>Ribeirão Pires</option>
@@ -108,27 +107,28 @@
                     </div>
 
                     <div class="col-6 col-md-2">
-                        <label class="label-pequena">Parceiro/Instrutor</label>
-                        <select class="form-select form-select-sm input-filtro">
-                            <option value="" selected>Escolha</option>
-                            <option>Natali Schers</option>
-                            <option>Sarah Maranhão</option>
-                            <option>Rebeca Cerqueira</option>
-                            <option>Stephanie Cruz</option>
+                        <label class="label-pequena">Parceiro(a)/Instrutor(a)</label>
+                        <select class="form-select input-filtro">
+                            <option value="" selected>Todos(as)</option>
+                            <option value="parceiro">Parceiro(a) de treino</option>
+                            <option value="instrutor">Instrutor(a)</option>
                         </select>
                     </div>
 
-                    <div class="col-12 col-md-2 d-flex gap-2">
-                        <button type="submit" class="btn-filtrar flex-fill text btn-sm ">Filtrar</button>
-                        <button type="reset" class="btn-limpar flex-fill btn-sm ">Limpar</button>
+                    <div class="col-12 col-md-4 d-flex gap-2">
+                        <button type="submit" class="btn btn-secondary w-50">Filtrar</button>
+                        <button type="reset" class="btn btn-secondary-opacity w-50">Limpar</button>
                     </div>
-
                 </div>
             </form>
+
+            <div id="alerta">
+
+            </div>
         </section>
 
         <section class="atletas container">
-            <div class="card-atleta">
+            <div class="card-atleta" data-disponibilidade="instrutor parceiro">
                 <img src="./assets/img/card-atletas/natali-schers.png" alt="Foto de perfil da atleta Natali Schers"
                     class="w-100">
                 <div class="card-body">
@@ -141,12 +141,12 @@
                         <p class="mb-0">Esporte(s): vôlei, futebol e natação</p>
                     </div>
                     <div class="w-100 text-center">
-                        <a href="#" class="btn btn-acessar-perfil">Acessar Perfil</a>
+                        <a href="#" class="btn btn-primary">Acessar Perfil</a>
                     </div>
                 </div>
             </div>
 
-            <div class="card-atleta">
+            <div class="card-atleta" data-disponibilidade="instrutor">
                 <img src="./assets/img/card-atletas/sarah-maranhao.png" alt="Foto de perfil da atleta Sarah Maranhão"
                     class="w-100">
                 <div class="card-body">
@@ -160,12 +160,12 @@
                         <p class="mb-0">Esporte(s): Basquete e natação</p>
                     </div>
                     <div class="w-100 text-center">
-                        <a href="#" class="btn btn-acessar-perfil">Acessar Perfil</a>
+                        <a href="#" class="btn btn-primary">Acessar Perfil</a>
                     </div>
                 </div>
             </div>
 
-            <div class="card-atleta">
+            <div class="card-atleta" data-disponibilidade="parceiro">
                 <img src="./assets/img/card-atletas/rebeca-cerqueira.png"
                     alt="Foto de perfil da atleta Rebeca Cerqueira" class="w-100">
                 <div class="card-body">
@@ -178,12 +178,12 @@
                         <p class="mb-0">Esporte(s): vôlei</p>
                     </div>
                     <div class="w-100 text-center">
-                        <a href="#" class="btn btn-acessar-perfil">Acessar Perfil</a>
+                        <a href="#" class="btn btn-primary">Acessar Perfil</a>
                     </div>
                 </div>
             </div>
 
-            <div class="card-atleta">
+            <div class="card-atleta" data-disponibilidade="parceiro">
                 <img src="./assets/img/card-atletas/stephanie-cruz.png" alt="Foto de perfil da atleta Stephanie Cruz"
                     class="w-100">
                 <div class="card-body">
@@ -196,7 +196,7 @@
                         <p class="mb-0">Esporte(s): corrida</p>
                     </div>
                     <div class="w-100 text-center">
-                        <a href="#" class="btn btn-acessar-perfil">Acessar Perfil</a>
+                        <a href="#" class="btn btn-primary">Acessar Perfil</a>
                     </div>
                 </div>
             </div>

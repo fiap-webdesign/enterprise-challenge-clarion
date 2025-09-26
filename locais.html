@@ -71,13 +71,13 @@
 
     <main>
         <section class="container my-4">
-            <form class="filtro-form filtro_from_border bg-white border rounded-3 shadow-sm p-3">
+            <form class="filtro-form filtro_form p-3">
                 <div class="row g-2 align-items-end">
 
                     <div class="col-6 col-md-2">
                         <label class="label-pequena">Esporte</label>
-                        <select class="form-select form-select-sm input-filtro">
-                            <option value="" selected>Escolha</option>
+                        <select class="form-select input-filtro">
+                            <option value="" selected>Todos</option>
                             <option>Futebol de 5</option>
                             <option>Voleibol Adaptado</option>
                             <option>Basquete Adaptado</option>
@@ -86,31 +86,35 @@
 
                     <div class="col-6 col-md-2">
                         <label class="label-pequena">Estado</label>
-                        <select class="form-select form-select-sm input-filtro">
-                            <option value="" selected>Escolha</option>
+                        <select class="form-select input-filtro">
+                            <option value="" selected>Todos</option>
                             <option>São Paulo</option>
                         </select>
                     </div>
 
                     <div class="col-6 col-md-2">
                         <label class="label-pequena">Cidade</label>
-                        <select class="form-select form-select-sm input-filtro">
-                            <option value="" selected>Escolha</option>
+                        <select class="form-select input-filtro">
+                            <option value="" selected>Todas</option>
                             <option>São Paulo</option>
                         </select>
                     </div>
 
                     <div class="col-6 col-md-2">
                         <label class="label-pequena">Data</label>
-                        <input type="date" class="form-control form-control-sm input-filtro">
+                        <input type="date" class="form-control input-filtro">
                     </div>
 
-                    <div class="col-12 col-md-2 d-flex gap-4 ">
-                        <button type="submit" class="btn-filtrar flex-fill btn-sm">Filtrar</button>
-                        <button type="reset" class="btn-limpar flex-fill btn-sm">Limpar</button>
+                    <div class="col-12 col-md-4 d-flex gap-2">
+                        <button type="submit" class="btn btn-secondary w-50">Filtrar</button>
+                        <button type="reset" class="btn btn-secondary-opacity w-50">Limpar</button>
                     </div>
                 </div>
             </form>
+
+            <div id="alerta">
+
+            </div>
         </section>
 
         <section class="eventos container">
@@ -130,7 +134,7 @@
                             apoiar essa experiência única!</p>
                     </div>
                     <div class="w-100 text-center botoes">
-                        <a href="#" class="btn btn-quero-participar">Inscrever-se</a>
+                        <a href="#" class="btn btn-primary">Inscrever-se</a>
                         <a href="#" class="btn-favoritar" title="Favoritar evento">
                             <span class="material-symbols-outlined">
                                 favorite
@@ -161,7 +165,7 @@
                             quadra. Um jogo para todos!</p>
                     </div>
                     <div class="w-100 text-center botoes">
-                        <a href="#" class="btn btn-quero-participar">Inscrever-se</a>
+                        <a href="#" class="btn btn-primary">Inscrever-se</a>
                         <a href="#" class="btn-favoritar" title="Favoritar evento">
                             <span class="material-symbols-outlined">
                                 favorite
@@ -192,7 +196,7 @@
                             superação e inclusão.</p>
                     </div>
                     <div class="w-100 text-center botoes">
-                        <a href="#" class="btn btn-quero-participar">Inscrever-se</a>
+                        <a href="#" class="btn btn-primary">Inscrever-se</a>
                         <a href="#" class="btn-favoritar" title="Favoritar evento">
                             <span class="material-symbols-outlined">
                                 favorite
