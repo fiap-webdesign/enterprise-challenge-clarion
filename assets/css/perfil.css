@@ -1,6 +1,15 @@
 .profile-header {
-    background-color: #b9c2c638;
-    border-radius: 16px;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+
+.card-usuario,
+.list-group-item {
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius) !important;
+    padding: 16px;
+    flex: 1 1 calc(50% - 16px);
+    min-width: 300px;
 }
 
 .profile-img {
@@ -8,12 +17,7 @@
     height: 100px;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid #3B87B2;
-}
-
-.badge {
-    background-color: #F0BC22;
-    color: black;
+    border: 5px solid var(--azul);
 }
 
 .custom-list-perfil {
@@ -26,58 +30,58 @@
 }
 
 .custom-list-perfil li i {
-    color: #3B87B2;
+    color: var(--azul);
     margin-right: 8px;
     font-size: 1.2em;
 }
 
 .diploma-icon {
-    color: #3B87B2;
+    color: var(--azul);
     font-size: 1.2em;
 }
 
 .text-navy-primary {
-    color: #3B87B2 !important;
+    color: var(--azul) !important;
 }
 
 .bg-navy-primary {
-    background-color: #3B87B2 !important;
+    background-color: var(--azul) !important;
 }
 
 .btn-warning {
-    background-color: #F0BC22;
+    background-color: var(--amarelo);
     border: none;
     width: 215px;
 }
 
 .btn-outline-danger {
-    border-color: #D22828;
-    color: #D22828;
+    border-color: var(--vermelho);
+    color: var(--vermelho);
     width: 215px;
 }
 
 .btn-outline-danger:hover {
-    background-color: #D22828;
+    background-color: var(--vermelho);
     color: #fff;
 }
 
 .btn-outline-primary {
-    border-color: #3B87B2;
-    color: #3B87B2;
+    border-color: var(--azul);
+    color: var(--azul);
     width: 215px;
 }
 
 .btn-outline-primary:hover {
-    background-color: #3B87B2;
+    background-color: var(--azul);
     color: #fff;
 }
 
 .list-group-item {
-    border: #213541;
+    border: var(--azul);
 }
 
 .sub-text {
-    color: #003366;
+    color: var(--azul);
     opacity: 0.7;
     display: block;
     margin-top: 2px;
@@ -85,10 +89,10 @@
 
 .badge-custom {
     background-color: #fff;
-    color: #003366;
+    color: var(--azul);
     font-size: 0.75rem;
     border-radius: 20px;
-    border: 1px solid #b09c9c46;
+    border: 1px solid var(--cinza-escuro);
 }
 
 .icone-conquistas {
@@ -112,7 +116,6 @@
     .perfil-botoes {
         display: flex;
         flex-direction: column;
-        width: 100px;
         margin-top: 1rem;
         justify-content: flex-start;
         gap: 0.75rem;
@@ -127,7 +130,6 @@
     .perfil-botoes {
         flex-direction: column;
         align-items: center;
-        width: 300px;
         margin-top: 1rem;
         order: 2;
     }
