@@ -35,6 +35,11 @@
     max-width: 500px;
 }
 
+.card-evento {
+    width: 450px;
+    height: auto;
+}
+
 @media (max-width: 992px) {
     .topico p {
         max-width: 70%;

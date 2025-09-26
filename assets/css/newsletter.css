@@ -32,7 +32,9 @@
 }
 
 .newsletter-section .newsletter-title {
+    font-family: var(--fonte-texto) !important;
     font-size: 1.75rem;
+    color: var(--fonte-texto) !important;
     line-height: 1.08;
     margin-bottom: 1rem;
     max-width: 500px;
@@ -40,7 +42,7 @@
 
 .newsletter-section .newsletter-controls {
     width: 50%;
-    max-width: 760px;
+    max-width: 600px;
     display: flex;
     gap: 0.75rem;
     align-items: center;
