@@ -20,7 +20,7 @@ document.getElementById('postShare').addEventListener('click', function(event) {
 
     navigator.clipboard.writeText(link);
 
-    const toastElement = document.getElementById('toastNotificacao');
+    const toastElement = document.getElementById('toastNotification');
     const toast = new bootstrap.Toast(toastElement);
     toast.show();
 });
