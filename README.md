@@ -89,3 +89,5 @@ O projeto foi pensado para atender:
 - **Equilíbrio entre informação e interação** → mesclando conteúdo educativo com ferramentas de engajamento.  
 - **Simulação de comunidade real** → estimulando conexões e valorização da diversidade esportiva.  
 
+### 📌 Vídeo  
+- [**YouTube**](https://youtu.be/w4JQY7GEiP4)
