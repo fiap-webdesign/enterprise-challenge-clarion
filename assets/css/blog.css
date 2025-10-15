@@ -29,6 +29,16 @@
                 color: var(--texto)
             }
 
+            .post-excerpt {
+                text-overflow: ellipsis;
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 3;
+                line-clamp: 3;
+                color: var(--cinza-escuro);
+            }
+
             hr {
                 max-width: 100px;
                 opacity: 1;

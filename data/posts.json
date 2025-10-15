@@ -2,37 +2,49 @@
     {
         "id": 1,
         "title": "Saúde",
-        "content": "O esporte adaptado é uma ferramenta poderosa para promover a saúde física e mental das pessoas com deficiência. A prática regular de atividades esportivas pode melhorar a força muscular, a flexibilidade, a coordenação motora e a resistência cardiovascular. Além disso, o esporte adaptado também pode ajudar a reduzir o...",
-        "image": "./assets/img/blog/saude.png"
+        "content": "O esporte adaptado é uma ferramenta poderosa para promover a saúde física e mental das pessoas com deficiência. A prática regular de atividades esportivas pode melhorar a força muscular, a flexibilidade, a coordenação motora e a resistência cardiovascular. Além disso, o esporte adaptado também pode ajudar a reduzir o risco de doenças crônicas, como diabetes e hipertensão, promovendo uma vida mais ativa e saudável.\n\nAlém dos benefícios físicos, o esporte adaptado contribui significativamente para o bem-estar emocional. Participar de atividades esportivas proporciona momentos de lazer, socialização e superação de limites, fatores essenciais para o desenvolvimento da autoestima e da autoconfiança. O convívio com outros atletas e o apoio mútuo fortalecem laços de amizade e criam uma rede de suporte fundamental para o enfrentamento de desafios diários.\n\nPor fim, a inclusão no esporte adaptado estimula a autonomia e a independência das pessoas com deficiência. Ao vivenciar conquistas e superar obstáculos, os praticantes desenvolvem habilidades importantes para a vida cotidiana. Dessa forma, o esporte adaptado se consolida como um aliado indispensável na promoção da saúde integral e da qualidade de vida.",
+        "image": "./assets/img/blog/saude.png",
+        "author": "Natali Schers",
+        "date": "15/08/2025"
     },
     {
         "id": 2,
         "title": "Tecnologia no Esporte",
-        "content": "A tecnologia tem desempenhado um papel fundamental no avanço do esporte adaptado, proporcionando novas oportunidades e desafios para atletas com deficiência. Desde equipamentos especializados até dispositivos de assistência, a tecnologia tem ajudado a melhorar o desempenho, a segurança e a acessibilidade...",
-        "image": "./assets/img/blog/tecnologia-no-esporte.png"
+        "content": "A tecnologia tem desempenhado um papel fundamental no avanço do esporte adaptado, proporcionando novas oportunidades e desafios para atletas com deficiência. Equipamentos especializados, como cadeiras de rodas esportivas, próteses de alta performance e dispositivos de assistência, têm permitido que mais pessoas participem de diferentes modalidades esportivas com segurança e eficiência.\n\nAlém dos equipamentos, o uso de aplicativos e plataformas digitais tem facilitado o acompanhamento do desempenho dos atletas, o planejamento de treinos e a comunicação entre equipes técnicas e esportistas. Ferramentas de análise de dados e monitoramento em tempo real contribuem para a personalização dos treinos e para a prevenção de lesões, tornando o esporte adaptado cada vez mais acessível e inovador.\n\nO futuro do esporte adaptado está diretamente ligado ao desenvolvimento tecnológico. Investir em pesquisa e inovação é essencial para garantir que todos os atletas tenham acesso a recursos que potencializem suas habilidades e promovam a inclusão. Assim, a tecnologia segue como grande aliada na construção de um ambiente esportivo mais justo e igualitário.",
+        "image": "./assets/img/blog/tecnologia-no-esporte.png",
+        "author": "Natali Schers",
+        "date": "20/08/2025"
     },
     {
         "id": 3,
         "title": "Motivação",
-        "content": "A motivação é um fator crucial para o sucesso no esporte adaptado. Atletas com deficiência enfrentam desafios únicos, tanto físicos quanto emocionais, que podem afetar sua motivação para treinar e competir. No entanto, a motivação pode ser cultivada e fortalecida através de diversas estratégias...",
-        "image": "./assets/img/blog/motivacao.png"
+        "content": "A motivação é um fator crucial para o sucesso no esporte adaptado. Atletas com deficiência enfrentam desafios únicos, tanto físicos quanto emocionais, que podem afetar sua motivação para treinar e competir. No entanto, a motivação pode ser cultivada e fortalecida através de metas claras, apoio familiar e reconhecimento das conquistas, por menores que sejam.\n\nO ambiente esportivo proporciona inúmeras oportunidades para o desenvolvimento da resiliência e da autoconfiança. Superar obstáculos, aprender com as derrotas e celebrar as vitórias são experiências que contribuem para o crescimento pessoal e esportivo. O contato com outros atletas e a participação em competições também são fontes importantes de inspiração e incentivo.\n\nPor fim, é fundamental que treinadores, familiares e amigos estejam atentos às necessidades emocionais dos atletas, oferecendo suporte e encorajamento constantes. A motivação é um processo contínuo, que exige dedicação e compreensão, mas que, quando bem trabalhada, pode transformar vidas e abrir caminhos para grandes conquistas.",
+        "image": "./assets/img/blog/motivacao.png",
+        "author": "Natali Schers",
+        "date": "25/08/2025"
     },
     {
         "id": 4,
         "title": "Tecnologia no Esporte",
-        "content": "A tecnologia tem desempenhado um papel fundamental no avanço do esporte adaptado, proporcionando novas oportunidades e desafios para atletas com deficiência. Desde equipamentos especializados até dispositivos de assistência, a tecnologia tem ajudado a melhorar o desempenho, a segurança e a acessibilidade...",
-        "image": "./assets/img/blog/performance.png"
+        "content": "A tecnologia tem revolucionado o esporte adaptado, trazendo soluções inovadoras para aumentar a performance e a segurança dos atletas. Novos materiais, como fibras de carbono e ligas leves, permitem a fabricação de equipamentos mais resistentes e adaptáveis às necessidades individuais de cada esportista. Isso garante maior conforto e eficiência durante as competições.\n\nAlém disso, o desenvolvimento de softwares de análise de movimento e plataformas de treinamento virtual tem ampliado as possibilidades de preparação dos atletas. Com o auxílio dessas ferramentas, é possível identificar pontos de melhoria, corrigir técnicas e monitorar o progresso de forma detalhada, mesmo à distância.\n\nO acesso à tecnologia ainda é um desafio para muitos atletas, mas iniciativas de inclusão e parcerias com empresas do setor têm contribuído para democratizar essas inovações. O investimento contínuo em tecnologia é fundamental para garantir que o esporte adaptado continue evoluindo e proporcionando oportunidades para todos.",
+        "image": "./assets/img/blog/performance.png",
+        "author": "Natali Schers",
+        "date": "30/09/2025"
     },
     {
         "id": 5,
         "title": "Nutrição",
-        "content": "A nutrição desempenha um papel fundamental no desempenho e na recuperação dos atletas de esporte adaptado. Uma alimentação adequada pode ajudar a melhorar a força, a resistência e a concentração, além de reduzir o risco de lesões e doenças...",
-        "image": "./assets/img/blog/nutricao.png"
+        "content": "A nutrição desempenha um papel fundamental no desempenho e na recuperação dos atletas de esporte adaptado. Uma alimentação equilibrada fornece os nutrientes necessários para manter a energia, fortalecer os músculos e prevenir lesões. O acompanhamento nutricional personalizado é essencial para atender às necessidades específicas de cada atleta.\n\nAlém dos aspectos físicos, a nutrição adequada contribui para o bem-estar mental e emocional. Alimentos ricos em vitaminas, minerais e antioxidantes ajudam a combater o estresse e a fadiga, promovendo uma melhor qualidade de vida. Hidratação constante e refeições balanceadas são práticas indispensáveis para quem busca alta performance.\n\nPor fim, é importante ressaltar que a educação nutricional deve fazer parte da rotina dos atletas, treinadores e familiares. Conhecer os alimentos, saber como combiná-los e entender a importância de cada nutriente são passos fundamentais para alcançar resultados positivos e garantir a saúde a longo prazo.",
+        "image": "./assets/img/blog/nutricao.png",
+        "author": "Natali Schers",
+        "date": "05/10/2025"
     },
     {
         "id": 6,
         "title": "Novidades da Plataforma!",
-        "content": "Estamos entusiasmados em anunciar as últimas atualizações e melhorias na nossa plataforma de esporte adaptado. Nosso compromisso é proporcionar a melhor experiência possível para nossos usuários, e essas novidades refletem esse objetivo....",
-        "image": "./assets/img/blog/novidades-da-plataforma.png"
+        "content": "Estamos entusiasmados em anunciar as últimas atualizações e melhorias na nossa plataforma de esporte adaptado. Agora, os usuários contam com uma interface mais intuitiva, novas funcionalidades para acompanhamento de treinos e integração com dispositivos de monitoramento de saúde. Tudo foi pensado para tornar a experiência ainda mais completa e personalizada.\n\nAlém das melhorias técnicas, ampliamos nossa base de conteúdos educativos, trazendo artigos, vídeos e dicas de especialistas sobre saúde, nutrição, motivação e tecnologia no esporte adaptado. Nosso objetivo é oferecer informação de qualidade e inspirar cada vez mais pessoas a praticarem atividades físicas de forma segura e inclusiva.\n\nSeguimos comprometidos em ouvir nossos usuários e evoluir constantemente. Suas sugestões são fundamentais para construirmos juntos uma plataforma cada vez melhor. Fique atento às novidades e aproveite todos os recursos disponíveis para potencializar sua jornada no esporte adaptado!",
+        "image": "./assets/img/blog/novidades-da-plataforma.png",
+        "author": "Natali Schers",
+        "date": "10/10/2025"
     }
 ]

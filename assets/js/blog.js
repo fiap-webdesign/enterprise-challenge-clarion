@@ -12,7 +12,7 @@ fetch('./data/posts.json')
                 <div class="post-content">
                 <h3 class="post-title">${post.title}</h3>
                 <hr>
-                <p class="text-secondary mb-0">${post.content}</p>
+                <p class="post-excerpt mb-0">${post.content}</p>
                 </div>
                 </article>
             `;
