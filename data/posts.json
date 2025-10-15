@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "title": "Saúde",
+        "content": "O esporte adaptado é uma ferramenta poderosa para promover a saúde física e mental das pessoas com deficiência. A prática regular de atividades esportivas pode melhorar a força muscular, a flexibilidade, a coordenação motora e a resistência cardiovascular. Além disso, o esporte adaptado também pode ajudar a reduzir o...",
+        "image": "./assets/img/blog/saude.png"
+    },
+    {
+        "id": 2,
+        "title": "Tecnologia no Esporte",
+        "content": "A tecnologia tem desempenhado um papel fundamental no avanço do esporte adaptado, proporcionando novas oportunidades e desafios para atletas com deficiência. Desde equipamentos especializados até dispositivos de assistência, a tecnologia tem ajudado a melhorar o desempenho, a segurança e a acessibilidade...",
+        "image": "./assets/img/blog/tecnologia-no-esporte.png"
+    },
+    {
+        "id": 3,
+        "title": "Motivação",
+        "content": "A motivação é um fator crucial para o sucesso no esporte adaptado. Atletas com deficiência enfrentam desafios únicos, tanto físicos quanto emocionais, que podem afetar sua motivação para treinar e competir. No entanto, a motivação pode ser cultivada e fortalecida através de diversas estratégias...",
+        "image": "./assets/img/blog/motivacao.png"
+    },
+    {
+        "id": 4,
+        "title": "Tecnologia no Esporte",
+        "content": "A tecnologia tem desempenhado um papel fundamental no avanço do esporte adaptado, proporcionando novas oportunidades e desafios para atletas com deficiência. Desde equipamentos especializados até dispositivos de assistência, a tecnologia tem ajudado a melhorar o desempenho, a segurança e a acessibilidade...",
+        "image": "./assets/img/blog/performance.png"
+    },
+    {
+        "id": 5,
+        "title": "Nutrição",
+        "content": "A nutrição desempenha um papel fundamental no desempenho e na recuperação dos atletas de esporte adaptado. Uma alimentação adequada pode ajudar a melhorar a força, a resistência e a concentração, além de reduzir o risco de lesões e doenças...",
+        "image": "./assets/img/blog/nutricao.png"
+    },
+    {
+        "id": 6,
+        "title": "Novidades da Plataforma!",
+        "content": "Estamos entusiasmados em anunciar as últimas atualizações e melhorias na nossa plataforma de esporte adaptado. Nosso compromisso é proporcionar a melhor experiência possível para nossos usuários, e essas novidades refletem esse objetivo....",
+        "image": "./assets/img/blog/novidades-da-plataforma.png"
+    }
+]
