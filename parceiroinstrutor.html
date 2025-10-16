@@ -25,22 +25,23 @@
 </head>
 
 <body>
+    <a class="skip-link visually-hidden-focusable" href="#mainContent">Pular para o conteúdo principal</a>
+
     <header class="mb-0 bg-custom">
-        <nav class="navbar navbar-expand-lg pt-3 container-fluid">
+        <nav class="navbar navbar-expand-lg pt-3 container-fluid" role="navigation" aria-label="Menu de navegação principal">
             <div class="container">
-                <a class="navbar-brand m-0" href="index.html">
+                <a class="navbar-brand m-0" href="index.html" aria-label="Ir para página inicial">
                     <img id="logo" src="./assets/img/logo.png" alt="Logo Clarion">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menu de navegação">
+                    <span class="navbar-toggler-icon" aria-hidden="true"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav" aria-label="Itens do menu">
                     <ul class="navbar-nav gap-3 mb-4 mb-lg-0">
                         <li class="nav-item"><a class="nav-link custom-link" href="index.html">Página Inicial</a></li>
                         <li class="nav-item"><a class="nav-link custom-link" href="perfil.html">Perfil</a></li>
-                        <li class="nav-item"><a class="nav-link custom-link"
-                                href="parceiroinstrutor.html">Parceiro/Instrutor</a>
+                        <li class="nav-item"><a class="nav-link custom-link" href="parceiroinstrutor.html">Parceiro/Instrutor</a>
                         </li>
                         <li class="nav-item"><a class="nav-link custom-link" href="blog.html">Blog</a></li>
                         <li class="nav-item"><a class="nav-link custom-link" href="comunidade.html">Comunidade</a></li>
@@ -67,16 +68,16 @@
                 </div>
             </div>
         </div>
-
     </header>
 
-    <main>
+    <main id="mainContent" role="main" aria-label="Conteúdo principal da página">
         <section class="container my-4">
-            <form class="filtro-form filtro_form p-3">
+            <form class="filtro-form filtro_form p-3" role="search" aria-labelledby="filterTitle">
+                 <h2 id="filterTitle" class="visually-hidden">Filtro de Parceiros e Instrutores</h2>
                 <div class="row g-2 align-items-end">
                     <div class="col-6 col-md-2">
-                        <label class="label-pequena">Esporte</label>
-                        <select class="form-select input-filtro">
+                        <label class="label-pequena" for="select-esporte">Esporte</label>
+                        <select id="select-esporte" class="form-select input-filtro" aria-label="Selecionar esporte">
                             <option value="" selected>Todos</option>
                             <option>Futebol</option>
                             <option>Vôlei</option>
@@ -88,16 +89,16 @@
                     </div>
 
                     <div class="col-6 col-md-2">
-                        <label class="label-pequena">Estado</label>
-                        <select class="form-select input-filtro">
+                        <label class="label-pequena" for="select-estado">Estado</label>
+                        <select id="select-estado" class="form-select input-filtro" aria-label="Selecionar estado">
                             <option value="" selected>Todos</option>
                             <option>São Paulo</option>
                         </select>
                     </div>
 
                     <div class="col-6 col-md-2">
-                        <label class="label-pequena">Cidade</label>
-                        <select class="form-select input-filtro">
+                        <label class="label-pequena" for="select-cidade">Cidade</label>
+                        <select id="select-cidade" class="form-select input-filtro" aria-label="Selecionar cidade">
                             <option value="" selected>Todas</option>
                             <option>Mauá</option>
                             <option>São Bernardo do Campo</option>
@@ -108,8 +109,8 @@
                     </div>
 
                     <div class="col-6 col-md-2">
-                        <label class="label-pequena">Parceiro(a)/Instrutor(a)</label>
-                        <select class="form-select input-filtro">
+                        <label class="label-pequena" for="select-tipo">Parceiro(a)/Instrutor(a)</label>
+                        <select id="select-tipo" class="form-select input-filtro" aria-label="Selecionar tipo de usuário">
                             <option value="" selected>Todos(as)</option>
                             <option value="parceiro">Parceiro(a) de treino</option>
                             <option value="instrutor">Instrutor(a)</option>
@@ -117,43 +118,41 @@
                     </div>
 
                     <div class="col-12 col-md-4 d-flex gap-2">
-                        <button type="submit" class="btn btn-secondary w-50">Filtrar</button>
-                        <button type="reset" class="btn btn-secondary-opacity w-50">Limpar</button>
+                        <button type="submit" class="btn btn-secondary w-50" aria-label="Aplicar filtros e buscar atletas">Filtrar</button>
+                        <button type="reset" class="btn btn-secondary-opacity w-50" aria-label="Limpar filtros aplicados">Limpar</button>
                     </div>
                 </div>
             </form>
 
-            <div id="alerta">
-
-            </div>
+            <div id="alerta" role="status" aria-live="polite" aria-atomic="true"></div>
         </section>
 
-        <section class="atletas container">
-            <div class="card-atleta" data-disponibilidade="instrutor parceiro">
+        <section class="atletas container" aria-label="Lista de parceiros e instrutores">
+            <div class="card-atleta" tabindex="0" data-disponibilidade="instrutor parceiro" role="article" aria-labelledby="natali-name">
                 <img src="./assets/img/card-atletas/natali-schers.png" alt="Foto de perfil da atleta Natali Schers"
                     class="w-100">
                 <div class="card-body">
                     <div class="informacoes-principais">
-                        <h2 class="mb-1 fs-5">Natali Schers</h2>
-                        <p class="mb-3 text-highlight"><i class="bi bi-geo-alt-fill me-1"></i>Mauá, SP</p>
+                        <h2 id="natali-name" class="mb-1 fs-5">Natali Schers</h2>
+                        <p class="mb-3 text-highlight"><i class="bi bi-geo-alt-fill me-1" aria-hidden="true"></i>Mauá, SP</p>
                     </div>
                     <div class="informacoes-secundarias">
                         <p class="mb-2">Disponibilidade: instrutor(a) e parceiro(a) de treinos</p>
                         <p class="mb-0">Esporte(s): vôlei, futebol e natação</p>
                     </div>
                     <div class="w-100 text-center">
-                        <a href="#" class="btn btn-primary">Acessar Perfil</a>
+                        <a href="#" class="btn btn-primary" aria-label="Acessar perfil de Natali Schers">Acessar Perfil</a>
                     </div>
                 </div>
             </div>
 
-            <div class="card-atleta" data-disponibilidade="instrutor">
+            <div class="card-atleta" tabindex="0" data-disponibilidade="instrutor" role="article" aria-labelledby="sarah-name">
                 <img src="./assets/img/card-atletas/sarah-maranhao.png" alt="Foto de perfil da atleta Sarah Maranhão"
                     class="w-100">
                 <div class="card-body">
                     <div class="informacoes-principais">
-                        <h2 class="mb-1 fs-5">Sarah Maranhão</h2>
-                        <p class="mb-3 text-highlight"><i class="bi bi-geo-alt-fill me-1"></i>São Bernardo do Campo, SP
+                        <h2 id="sarah-name" class="mb-1 fs-5">Sarah Maranhão</h2>
+                        <p class="mb-3 text-highlight"><i class="bi bi-geo-alt-fill me-1" aria-hidden="true"></i>São Bernardo do Campo, SP
                         </p>
                     </div>
                     <div class="informacoes-secundarias">
@@ -161,50 +160,50 @@
                         <p class="mb-0">Esporte(s): Basquete e natação</p>
                     </div>
                     <div class="w-100 text-center">
-                        <a href="#" class="btn btn-primary">Acessar Perfil</a>
+                        <a href="#" class="btn btn-primary" aria-label="Acessar perfil de Sarah Maranhão">Acessar Perfil</a>
                     </div>
                 </div>
             </div>
 
-            <div class="card-atleta" data-disponibilidade="parceiro">
+            <div class="card-atleta" tabindex="0" data-disponibilidade="parceiro" role="article" aria-labelledby="rebeca-name">
                 <img src="./assets/img/card-atletas/rebeca-cerqueira.png"
                     alt="Foto de perfil da atleta Rebeca Cerqueira" class="w-100">
                 <div class="card-body">
                     <div class="informacoes-principais">
-                        <h2 class="mb-1 fs-5">Rebeca Cerqueira</h2>
-                        <p class="mb-3 text-highlight"><i class="bi bi-geo-alt-fill me-1"></i>Ribeirão Pires, SP</p>
+                        <h2 id="rebeca-name" class="mb-1 fs-5">Rebeca Cerqueira</h2>
+                        <p class="mb-3 text-highlight"><i class="bi bi-geo-alt-fill me-1" aria-hidden="true"></i>Ribeirão Pires, SP</p>
                     </div>
                     <div class="informacoes-secundarias">
                         <p class="mb-2">Disponibilidade: parceiro(a) de treinos</p>
                         <p class="mb-0">Esporte(s): vôlei</p>
                     </div>
                     <div class="w-100 text-center">
-                        <a href="#" class="btn btn-primary">Acessar Perfil</a>
+                        <a href="#" class="btn btn-primary" aria-label="Acessar perfil de Rebeca Cerqueira">Acessar Perfil</a>
                     </div>
                 </div>
             </div>
 
-            <div class="card-atleta" data-disponibilidade="parceiro">
+            <div class="card-atleta" tabindex="0" data-disponibilidade="parceiro" role="article" aria-labelledby="stephanie-name">
                 <img src="./assets/img/card-atletas/stephanie-cruz.png" alt="Foto de perfil da atleta Stephanie Cruz"
                     class="w-100">
                 <div class="card-body">
                     <div class="informacoes-principais">
-                        <h2 class="mb-1 fs-5">Stephanie Cruz</h2>
-                        <p class="mb-3 text-highlight"><i class="bi bi-geo-alt-fill me-1"></i>São Caetano do Sul, SP</p>
+                        <h2 id="stephanie-name" class="mb-1 fs-5">Stephanie Cruz</h2>
+                        <p class="mb-3 text-highlight"><i class="bi bi-geo-alt-fill me-1" aria-hidden="true"></i>São Caetano do Sul, SP</p>
                     </div>
                     <div class="informacoes-secundarias">
                         <p class="mb-2">Disponibilidade: parceiro(a) de treinos</p>
                         <p class="mb-0">Esporte(s): corrida</p>
                     </div>
                     <div class="w-100 text-center">
-                        <a href="#" class="btn btn-primary">Acessar Perfil</a>
+                        <a href="#" class="btn btn-primary" aria-label="Acessar perfil de Stephanie Cruz">Acessar Perfil</a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <section class="newsletter-section py-5">
+    <section class="newsletter-section py-5" aria-labelledby="newsletterTitle">
         <div class="card text-dark border-0 newsletter-card">
             <picture class="newsletter-picture d-block mx-auto p-3">
                 <source media="(min-width: 577px)" srcset="./assets/img/newsletter/fundo_newsletter.svg">
@@ -212,23 +211,19 @@
                     alt="Fundo Newsletter azul claro com ícone de avião de papel">
             </picture>
 
-            <div
-                class="card-img-overlay d-flex flex-column align-items-center justify-content-center text-center newsletter-overlay">
-                <h5 class="card-title newsletter-title mb-4">
+            <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center text-center newsletter-overlay">
+                <h5 id="newsletterTitle" class="card-title newsletter-title mb-4">
                     Se inscreva na nossa newsletter para receber informações,
                     últimas notícias e outros conteúdos sobre a Clarion.
                 </h5>
 
-                <div class="newsletter-controls d-flex gap-3">
+                <div class="newsletter-controls d-flex gap-3" role="form" aria-label="Formulário de inscrição na newsletter">
                     <div class="newsletter-input-group d-flex align-items-center">
-                        <span class="input-icon bg-white d-flex align-items-center px-3 border-0 rounded-start-4">
-                            <i class="bi bi-envelope-at text-dark" aria-hidden="true"></i>
-                        </span>
-                        <input type="email" class="form-control form-control-lg border-0 rounded-end-4"
-                            placeholder="Seu e-mail" aria-label="Seu e-mail">
+                        <input id="newsletterEmail" type="email" class="form-control form-control-lg border-0 rounded-4"
+                            placeholder="Seu e-mail" aria-label="Seu e-mail para inscrição" required>
                     </div>
 
-                    <button class="btn text-white btn-lg rounded-3 newsletter-btn" type="button">
+                    <button class="btn text-white btn-lg rounded-3 newsletter-btn" type="button" aria-label="Inscrever-se na newsletter">
                         Se inscreva
                     </button>
                 </div>
@@ -236,7 +231,7 @@
         </div>
     </section>
 
-    <footer class="text-center text-lg-start text-muted border-top">
+    <footer class="text-center text-lg-start text-muted border-top" role="contentinfo" aria-label="Rodapé do site">
         <section>
             <div class="container text-center text-md-start mt-5">
                 <div class="row mt-3 ms-md-5">
@@ -287,18 +282,18 @@
 
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 fs-5">
                         <span>Nos siga nas redes sociais:</span>
-                        <div class="social-icons mt-2">
-                            <a href="" class="me-3 text-reset">
-                                <i class="fa-brands fa-square-facebook"></i>
+                        <div class="social-icons mt-2" role="navigation" aria-label="Redes sociais">
+                            <a href="" class="me-3 text-reset" aria-label="Facebook">
+                                <i class="fa-brands fa-square-facebook" aria-hidden="true"></i>
                             </a>
-                            <a href="" class="me-3 text-reset">
-                                <i class="fa-brands fa-square-instagram"></i>
+                            <a href="" class="me-3 text-reset" aria-label="Instagram">
+                                <i class="fa-brands fa-square-instagram" aria-hidden="true"></i>
                             </a>
-                            <a href="" class="me-3 text-reset">
-                                <i class="fa-brands fa-square-x-twitter"></i>
+                            <a href="" class="me-3 text-reset" aria-label="X / Twitter">
+                                <i class="fa-brands fa-square-x-twitter" aria-hidden="true"></i>
                             </a>
-                            <a href="" class="me-3 text-reset">
-                                <i class="fa-brands fa-square-whatsapp"></i>
+                            <a href="" class="me-3 text-reset" aria-label="WhatsApp">
+                                <i class="fa-brands fa-square-whatsapp" aria-hidden="true"></i>
                             </a>
                         </div>
                     </div>
@@ -313,7 +308,5 @@
     <script src="./assets/js/footer.js"></script>
     <script src="./assets/js/filtroParceirosinstrutor.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
-
 </html>
