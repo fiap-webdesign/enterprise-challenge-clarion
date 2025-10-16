@@ -5,7 +5,7 @@
     max-height: 107px;
 }
 
-.inspacoes-maintitle {
+.inspiracoes-title {
     font-family: var(--fonte-titulo);
     color: var(--azul);
     letter-spacing: 25px;
@@ -36,7 +36,8 @@
 }
 
 .card-evento {
-    width: 450px;
+    width: 100%;
+    max-width: 530px;
     height: auto;
 }
 
@@ -44,5 +45,10 @@
     .topico p {
         max-width: 70%;
         text-align: center;
+    }
+
+    .inspiracoes-title {
+        font-size: 6vw;
+        letter-spacing: 15px;
     }
 }

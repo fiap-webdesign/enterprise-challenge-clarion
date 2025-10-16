@@ -77,8 +77,8 @@
                 <div class="row g-2 align-items-end">
 
                     <div class="col-6 col-md-2">
-                        <label class="label-pequena">Esporte</label>
-                        <select class="form-select input-filtro">
+                        <label class="label-pequena" for="select-esporte">Esporte</label>
+                        <select id="select-esporte" class="form-select input-filtro" aria-label="Selecionar esporte">
                             <option value="" selected>Todos</option>
                             <option>Futebol de 5</option>
                             <option>Voleibol Adaptado</option>
@@ -87,29 +87,29 @@
                     </div>
 
                     <div class="col-6 col-md-2">
-                        <label class="label-pequena">Estado</label>
-                        <select class="form-select input-filtro">
+                        <label id="select-estado" class="label-pequena">Estado</label>
+                        <select id="select-estado" class="form-select input-filtro" aria-label="Selecionar estado">
                             <option value="" selected>Todos</option>
                             <option>São Paulo</option>
                         </select>
                     </div>
 
                     <div class="col-6 col-md-2">
-                        <label class="label-pequena">Cidade</label>
-                        <select class="form-select input-filtro">
+                        <label for="select-cidade" class="label-pequena">Cidade</label>
+                        <select id="select-cidade" class="form-select input-filtro" aria-label="Selecionar cidade">
                             <option value="" selected>Todas</option>
                             <option>São Paulo</option>
                         </select>
                     </div>
 
                     <div class="col-6 col-md-2">
-                        <label class="label-pequena">Data</label>
-                        <input type="date" class="form-control input-filtro">
+                        <label for="input-data" class="label-pequena">Data</label>
+                        <input id="input-data" type="date" class="form-control input-filtro" aria-label="Selecionar data">
                     </div>
 
                     <div class="col-12 col-md-4 d-flex gap-2">
-                        <button type="submit" class="btn btn-secondary w-50">Filtrar</button>
-                        <button type="reset" class="btn btn-secondary-opacity w-50">Limpar</button>
+                        <button type="submit" class="btn btn-secondary w-50" aria-label="Filtrar eventos esportivos">Filtrar</button>
+                        <button type="reset" class="btn btn-secondary-opacity w-50" aria-label="Limpar filtros aplicados">Limpar</button>
                     </div>
                 </div>
             </form>
@@ -120,13 +120,13 @@
         </section>
 
         <section class="eventos container">
-            <div class="card-evento">
+            <div class="card-evento" tabindex="0">
                 <img src="./assets/img/card-eventos/arena-inclusiva.png" alt="Imagem de pessoas jogando futebol de 5"
                     class="w-100">
                 <div class="card-body">
                     <div class="informacoes-principais">
                         <h2 class="mb-1 fs-5">Futebol de 5</h2>
-                        <p class="mb-3 text-highlight"><i class="bi bi-geo-alt-fill me-1"></i>São Paulo, SP</p>
+                        <p class="mb-3 text-highlight"><i class="bi bi-geo-alt-fill me-1" aria-hidden="true"></i>São Paulo, SP</p>
                     </div>
                     <div class="informacoes-secundarias">
                         <p class="mb-2">Data do encontro: 22/09/2025</p>
@@ -151,13 +151,13 @@
                 </div>
             </div>
 
-            <div class="card-evento">
+            <div class="card-evento" tabindex="0">
                 <img src="./assets/img/card-eventos/ginasio-da-integracao.png"
                     alt="Imagem de pessoas jogando futebol de 5" class="w-100">
                 <div class="card-body">
                     <div class="informacoes-principais">
                         <h2 class="mb-1 fs-5">Voleibol adaptado</h2>
-                        <p class="mb-3 text-highlight"><i class="bi bi-geo-alt-fill me-1"></i>São Paulo, SP</p>
+                        <p class="mb-3 text-highlight"><i class="bi bi-geo-alt-fill me-1" aria-hidden="true"></i>São Paulo, SP</p>
                     </div>
                     <div class="informacoes-secundarias">
                         <p class="mb-2">Data do encontro: 29/10/2025</p>
@@ -182,13 +182,13 @@
                 </div>
             </div>
 
-            <div class="card-evento">
+            <div class="card-evento" tabindex="0">
                 <img src="./assets/img/card-eventos/centro-esportivo.png" alt="Imagem de pessoas jogando futebol de 5"
                     class="w-100">
                 <div class="card-body">
                     <div class="informacoes-principais">
                         <h2 class="mb-1 fs-5">Basquete adaptado</h2>
-                        <p class="mb-3 text-highlight"><i class="bi bi-geo-alt-fill me-1"></i>São Paulo, SP</p>
+                        <p class="mb-3 text-highlight"><i class="bi bi-geo-alt-fill me-1" aria-hidden="true"></i>São Paulo, SP</p>
                     </div>
                     <div class="informacoes-secundarias">
                         <p class="mb-2">Data do encontro: 15/09/2025</p>
