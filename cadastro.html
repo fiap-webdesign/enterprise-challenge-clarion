@@ -15,12 +15,14 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/menu.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
-    <link rel="stylesheet" href="./assets/css/cadastro.css">   
+    <link rel="stylesheet" href="./assets/css/cadastro.css">
     <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
     <title>Cadastro</title>
 </head>
 
 <body>
+    <a class="skip-link visually-hidden-focusable" href="#mainContent">Pular para o conteúdo principal</a>
+
     <header class="mb-0 bg-custom">
         <nav class="navbar navbar-expand-lg pt-3 container-fluid">
             <div class="container">
@@ -50,7 +52,8 @@
         </nav>
     </header>
 
-    <main class="cadastro-section container d-flex justify-content-center align-items-center py-4 flex-column container">
+    <main class="cadastro-section container d-flex justify-content-center align-items-center py-4 flex-column container"
+        role="main" id="mainContent" aria-label="Conteúdo principal da página">
         <div class="cadastro-container d-flex flex-column align-items-center text-center">
             <img src="./assets/img/icone_cadastro.png"
                 alt="Ilustração de um homem correndo e uma mulher levantando um halter."
@@ -239,7 +242,8 @@
                     </div>
                     <div class="row mb-3 mt-4">
                         <div class="col-12 col-md-6 mb-md-0 mb-3">
-                            <label class="fw-semibold d-block text-start w-100">Nível de experiência <span class="text-danger">*</span></label>
+                            <label class="fw-semibold d-block text-start w-100">Nível de experiência <span
+                                    class="text-danger">*</span></label>
                             <select class="form-select" required>
                                 <option selected disabled>Selecione</option>
                                 <option>Iniciante</option>

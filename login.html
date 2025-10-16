@@ -22,7 +22,7 @@
 </head>
 
 <body>
-
+    <a class="skip-link visually-hidden-focusable" href="#mainContent">Pular para o conteúdo principal</a>
     <header class="mb-0 bg-custom">
         <nav class="navbar navbar-expand-lg pt-3 container-fluid">
             <div class="container">
@@ -52,7 +52,8 @@
         </nav>
     </header>
 
-    <main class="d-flex container py-4 justify-content-center align-items-center">
+    <main class="d-flex container py-4 justify-content-center align-items-center" role="main" id="mainContent"
+        aria-label="Conteúdo principal da página">
         <div class="login-container d-flex flex-column align-items-center text-center">
             <img src="./assets/img/icone_login.png"
                 alt="Ilustração de uma mulher caminhando com um celular e, ao fundo, uma janela de login/cadastro com um cadeado."
@@ -60,7 +61,8 @@
             <h2 class="login-title mb-4 mt-1">Seja bem-vindo de volta!</h2>
 
             <form class="w-100" action="#" method="POST">
-                <div class="login-form mb-4 p-3 w-100 d-flex align-items-center gap-4 flex-column justify-content-center">
+                <div
+                    class="login-form mb-4 p-3 w-100 d-flex align-items-center gap-4 flex-column justify-content-center">
                     <div class="input-wrapper w-100">
                         <label for="email" class="fw-semibold text-start d-block">E-mail <span
                                 class="text-danger">*</span></span></label>
