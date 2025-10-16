@@ -89,5 +89,8 @@ O projeto foi pensado para atender:
 - **Equilíbrio entre informação e interação** → mesclando conteúdo educativo com ferramentas de engajamento.  
 - **Simulação de comunidade real** → estimulando conexões e valorização da diversidade esportiva.  
 
-### 📌 Vídeo  
+### 🎥 Vídeo  
 - [**YouTube**](https://youtu.be/w4JQY7GEiP4)
+
+### 🔗 Protótipo
+- [**Figma Enterprise Challenge**](https://www.figma.com/design/qoIrNVgT7LaSMX57IDx61o/Enterprise-Challenge?node-id=2705-2700&t=IU3XMaP6sKr90tRv-1)
