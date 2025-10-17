@@ -23,7 +23,7 @@
 }
 
 .header-parceiros {
-    background-image: url('/assets/img//banners/fundo_header_parceiros.png');
+    background-image: url('../img/banners/fundo_header_parceiros.png');
     height: 500px;
     background-size: cover;
     background-position: center;
@@ -31,7 +31,7 @@
 }
 
 .header-locais {
-    background-image: url('/assets/img//banners/fundo_header_locais.png');
+    background-image: url('../img/banners/fundo_header_locais.png');
     height: 500px;
     background-size: cover;
     background-position: center;
@@ -39,7 +39,7 @@
 }
 
 .header-blog {
-    background-image: url('/assets/img//banners/fundo_header_blog.png');
+    background-image: url('../img/banners/fundo_header_blog.png');
     height: 500px;
     background-size: cover;
     background-position: center;
@@ -47,7 +47,7 @@
 }
 
 .header-comunidade {
-    background-image: url('/assets/img//banners/fundo_header_comunidade.png');
+    background-image: url('..img/banners/fundo_header_comunidade.png');
     height: 500px;
     background-size: cover;
     background-position: center;
@@ -55,7 +55,7 @@
 }
 
 .header-banner-home {
-    background-image: url('/assets/img//banners/fundo_banner_home.png');
+    background-image: url('../img/banners/fundo_banner_home.png');
     height: 500px;
     background-size: cover;
     background-position: center;
@@ -342,12 +342,12 @@
     }
 
     .header-home {
-        background-image: url('/assets/img//banners/fundo_header_home_mobile.png');
+        background-image: url('../img/banners/fundo_header_home_mobile.png');
         height: 350px;
     }
 
     .header-banner-home {
-        background-image: url('/assets/img//banners/fundo_banner_home_mobile.png');
+        background-image: url('../img/banners/fundo_banner_home_mobile.png');
         height: 350px;
     }
 
@@ -374,7 +374,7 @@
 
     .header-parceiros {
         height: 350px;
-        background-image: url('/assets/img/banners/fundo_header_parceiros_mobile.png');
+        background-image: url('../img/banners/fundo_header_parceiros_mobile.png');
     }
 
     .header-parceiros h1 {
@@ -396,7 +396,7 @@
     }
 
     .header-blog {
-        background-image: url('/assets/img/banners/fundo_header_blog_mobile.png');
+        background-image: url('../img/banners/fundo_header_blog_mobile.png');
         height: 350px;
     }
 
@@ -420,7 +420,7 @@
     }
 
     .header-comunidade {
-        background-image: url('/assets/img/banners/fundo_header_comunidade_mobile.png');
+        background-image: url('../img/banners/fundo_header_comunidade_mobile.png');
         height: 350px;
     }
 
@@ -443,7 +443,7 @@
     }
 
     .header-locais {
-        background-image: url('/assets/img/banners/fundo_header_locais_mobile.png');
+        background-image: url('../img/banners/fundo_header_locais_mobile.png');
         height: 350px;
     }
 
