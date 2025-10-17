@@ -47,7 +47,7 @@
 }
 
 .header-comunidade {
-    background-image: url('..img/banners/fundo_header_comunidade.png');
+    background-image: url('../img/banners/fundo_header_comunidade.png');
     height: 500px;
     background-size: cover;
     background-position: center;
